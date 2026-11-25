@@ -1,0 +1,1268 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Thông tin phường Ba Đình</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Dancing+Script:wght@700&family=Montserrat:wght@500;600;700;800&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: sách lật hai trang trên nền bàn đỏ thẫm; mỗi trang khổ A4 dựng ở 600×848 rồi co giãn theo màn hình */
+:root{
+  --red:#B5121B; --red-d:#7E0B10; --red-l:#D8262C;
+  --gold:#C9922E; --gold-l:#F2D17A; --gold-d:#9A6A17;
+  --paper:#FBF3E1; --paper-2:#F5E6C8; --card:#FFFBF2;
+  --ink:#2B1B12; --muted:#6A5040;
+  --desk:#2A0F0E; --desk-2:#45161400;
+  --f-title:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --f-body:Tinos,"Times New Roman",Times,serif;
+  --f-ui:Montserrat,"Segoe UI",Arial,sans-serif;
+  --f-script:"Dancing Script","Brush Script MT",cursive;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:radial-gradient(ellipse at 50% 30%,#4a1715 0%,var(--desk) 70%);color:#f6e7c9;font-family:var(--f-ui);overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--desk)}
+.app{height:100%;display:flex;flex-direction:column;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:10px 8px}
+.bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:space-between;min-height:44px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:34px;height:34px;border-radius:50%;background:var(--paper)}
+.brand b{font-family:var(--f-title);font-size:20px;letter-spacing:.02em;color:var(--gold-l);white-space:nowrap}
+.brand span{font-size:12px;color:#d9b98a;white-space:nowrap}
+.ctrls{display:flex;align-items:center;gap:6px}
+.btn{appearance:none;border:1px solid #7a4a2a;background:#3a1513;color:#f6e3bd;height:36px;min-width:36px;padding:0 12px;border-radius:18px;font:600 13px var(--f-ui);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:#561c18;border-color:var(--gold)}
+.btn:focus-visible{outline:2px solid var(--gold-l);outline-offset:2px}
+.btn svg{width:16px;height:16px}
+.pgi{font:600 13px var(--f-ui);color:#f2d9a8;min-width:92px;text-align:center;font-variant-numeric:tabular-nums}
+.stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;position:relative}
+#book{position:relative}
+.hint{font-size:11.5px;color:#b8946a;text-align:center;padding-top:4px}
+@media (max-width:560px){.hint .k{display:none}.btn .lb{display:none}}
+
+/* ===== Trang ===== */
+.page{background:var(--paper);overflow:hidden}
+.pi{width:600px;height:848px;transform:scale(var(--k,1));transform-origin:0 0;position:relative;display:flex;flex-direction:column;color:var(--ink);font-family:var(--f-body);
+  background:
+   radial-gradient(ellipse at 50% 35%,#fffaf0 0%,rgba(255,250,240,0) 65%),
+   repeating-radial-gradient(circle at 50% 120%,rgba(201,146,46,.05) 0 2px,transparent 2px 22px),
+   var(--paper);}
+.noflip .pi{transform:none}
+.hd{position:relative;padding:12px 92px 6px;text-align:center;flex:none}
+.logo{position:absolute;left:16px;top:14px;width:70px;height:71px;border-radius:50%}
+.flag{position:absolute;right:12px;top:14px;width:84px;height:auto;pointer-events:none;filter:drop-shadow(0 2px 2px rgba(90,20,0,.25))}
+.cv-top .flag{width:96px;top:18px;right:14px}
+.kick{display:inline-block;font:700 9px var(--f-ui);letter-spacing:.16em;color:var(--gold-l);background:linear-gradient(var(--red-l),var(--red-d));padding:4px 16px 3px;border-radius:3px;border:1px solid var(--gold);margin-bottom:5px}
+.ttl{font:800 34px/1.16 var(--f-title);color:var(--red);margin:0;text-transform:uppercase;letter-spacing:.005em;text-wrap:balance;text-shadow:0 1px 0 #fff,0 2px 4px rgba(126,11,16,.22)}
+.sub{font:700 13px/1.25 var(--f-body);text-transform:uppercase;margin-top:4px;color:var(--ink);text-wrap:balance}
+.lotusline{display:block;margin:3px auto 0;width:120px;height:12px}
+.eb{position:absolute;left:0;right:0;top:-1px;text-align:center}
+.rib{flex:none;position:relative;height:30px;margin:2px 0 8px;display:flex;align-items:center;justify-content:center}
+.rib svg{position:absolute;inset:0;width:100%;height:100%}
+.rib span{position:relative;font:700 17px var(--f-script);color:var(--gold-l);text-shadow:0 1px 1px rgba(0,0,0,.35);letter-spacing:.01em;white-space:nowrap}
+.ft{flex:none;position:relative;height:46px;margin-top:6px}
+.ft svg.w{position:absolute;inset:0;width:100%;height:100%}
+.ft .pn{position:absolute;left:0;right:0;bottom:7px;text-align:center;font:700 15px var(--f-body);color:#fff4d6;letter-spacing:.05em}
+.ft .pn::before,.ft .pn::after{content:"";display:inline-block;width:46px;height:1px;background:var(--gold-l);vertical-align:middle;margin:0 10px}
+.ft .tag{position:absolute;right:16px;bottom:9px;font:700 8.5px var(--f-ui);letter-spacing:.08em;color:var(--gold-l);opacity:.9}
+.ft .lo{position:absolute;bottom:14px;width:64px;height:46px}
+.ft .lo.l{left:4px}.ft .lo.r{right:4px;transform:scaleX(-1)}
+
+.bd{flex:1;min-height:0;display:flex;flex-direction:column;gap:calc(8px*var(--fs,1));padding:0 22px;font-size:calc(12px*var(--fs,1));line-height:1.42;overflow:hidden}
+.bd p{margin:0;text-align:justify;hyphens:none}
+.lead{font-size:1.02em}
+.lead.c{text-align:center}
+.d{color:var(--red);font-weight:700}
+.dc{float:left;font:800 3.1em/0.85 var(--f-title);color:var(--red);margin:.06em .1em 0 0}
+.q{font-style:italic}
+
+/* Ảnh */
+.im{position:relative;flex:1 1 0;min-height:60px;overflow:hidden;background:#e9dcc2}
+.im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.fig{display:flex;flex-direction:column;background:var(--card);border:1px solid #e3c68f;border-radius:6px;padding:4px;box-shadow:0 1px 3px rgba(90,40,10,.12);min-height:0}
+.fig .im{border-radius:3px}
+.cap{padding:4px 3px 1px;font-size:.78em;line-height:1.3;color:#4a3426}
+.cap b{display:block;font:700 .95em var(--f-ui);color:var(--red);text-transform:uppercase;letter-spacing:.01em}
+.cap b::before{content:"";display:inline-block;border-left:.38em solid transparent;border-right:.38em solid transparent;border-bottom:.62em solid var(--red);margin-right:.4em;vertical-align:.05em}
+.row{display:grid;gap:calc(8px*var(--fs,1));min-height:0}
+.r2{grid-template-columns:1fr 1fr}.r3{grid-template-columns:1fr 1fr 1fr}.r4{grid-template-columns:repeat(4,1fr)}
+.r12{grid-template-columns:1.25fr 1fr}.r21{grid-template-columns:1fr 1.25fr}
+.grow{flex:1 1 0;min-height:0}
+.row.grow>.fig{min-height:0}
+.col{display:flex;flex-direction:column;gap:calc(8px*var(--fs,1));min-height:0;min-width:0}
+
+/* Hộp, nhãn */
+.box{background:var(--card);border:1px solid #e0c287;border-radius:8px;padding:.75em .9em;position:relative}
+.box.red{background:linear-gradient(135deg,var(--red-l),var(--red-d));color:#fff4dc;border-color:var(--gold)}
+.box.red .d{color:var(--gold-l)}
+.ht{display:flex;align-items:center;gap:.5em;font:700 1.02em var(--f-ui);color:var(--red);text-transform:uppercase;margin-bottom:.35em;letter-spacing:.01em}
+.ht .n{flex:none;display:inline-grid;place-items:center;width:1.9em;height:1.9em;border-radius:50%;background:var(--red);color:var(--gold-l);font:800 .85em var(--f-ui)}
+.ht svg{width:1.5em;height:1.5em;color:var(--red);flex:none}
+.box.red .ht{color:var(--gold-l)}
+.pill{display:inline-block;font:700 .8em var(--f-ui);text-transform:uppercase;letter-spacing:.08em;color:var(--gold-l);background:var(--red);border:1px solid var(--gold);border-radius:20px;padding:.3em 1.1em;align-self:center}
+.chips{display:flex;flex-wrap:wrap;gap:.45em;justify-content:center}
+.chip{display:inline-flex;align-items:center;gap:.4em;background:var(--card);border:1px solid #dcb874;border-radius:20px;padding:.28em .8em;font:600 .82em var(--f-ui);color:var(--red-d)}
+.chip svg{width:1.25em;height:1.25em;color:var(--red)}
+
+/* Điểm nhấn */
+.stats{display:flex;align-items:center;justify-content:center;flex:none}
+.st{flex:1 1 0;display:flex;align-items:center;gap:.5em;padding:0 .55em;min-width:0}
+.st+.st{border-left:1px solid #d8b878}
+.st .ci{flex:none;width:3.3em;height:3.3em;border-radius:50%;border:2px solid var(--red);display:grid;place-items:center;background:#fff;box-shadow:inset 0 0 0 3px #fff,inset 0 0 0 4px rgba(181,18,27,.25)}
+.st .ci svg{width:1.75em;height:1.75em;color:var(--red)}
+.st .tx{font:700 .8em/1.15 var(--f-ui);color:var(--red-d);min-width:0}
+.st .tx b{display:block;font:800 1.95em/1 var(--f-title);color:var(--red);letter-spacing:.01em}
+.stats.sm .st .ci{width:2.8em;height:2.8em}.stats.sm .st .ci svg{width:1.45em;height:1.45em}
+.stats.sm .st .tx b{font-size:1.75em}
+.kh{display:flex;align-items:center;gap:.8em;flex:none}
+.kh::before,.kh::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+
+ul.ls{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.35em}
+ul.ls li{position:relative;padding-left:1.15em;text-align:justify}
+ul.ls li::before{content:"";position:absolute;left:.15em;top:.5em;width:.45em;height:.45em;background:var(--red);transform:rotate(45deg)}
+.box.red ul.ls li::before{background:var(--gold-l)}
+
+/* Bìa */
+.cover .pi{background:linear-gradient(#fff8ea,#fbefd6)}
+.cvimg{overflow:hidden}.cvbg{position:absolute;inset:-30px;background:url(img/cover3.jpg) center/cover;filter:blur(18px) saturate(1.1)}.cvph{position:relative;display:block;height:100%;width:auto;max-width:none;margin:0 auto;box-shadow:0 0 24px rgba(0,0,0,.25)}
+.cv-top{position:relative;text-align:center;padding:16px 20px 0 104px;flex:none}
+.cv-top .logo{left:18px;top:16px;width:84px;height:85px}
+.cv-t{font:800 46px/1.12 var(--f-title);color:var(--red);margin:4px 0 6px;text-shadow:0 1px 0 #fff,0 3px 5px rgba(126,11,16,.25);letter-spacing:.005em}
+.cv-pill{display:inline-block;font:700 15px var(--f-ui);color:#fff3d4;background:linear-gradient(var(--red-l),var(--red-d));border:1.5px solid var(--gold);border-radius:24px;padding:5px 22px}
+.cv-sub{font:700 14px var(--f-body);margin-top:6px}
+.lmk{flex:none;height:168px;margin-top:6px;background:url(img/landmarks.jpg) center/cover;position:relative}
+.lmk::after{content:"";position:absolute;inset:auto 0 0;height:40px;background:linear-gradient(transparent,#fbefd6)}
+.col6{flex:1;min-height:0;display:grid;grid-template-columns:1.1fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:7px;padding:0 16px}
+.col6 .im{border:3px solid #fff;outline:1.5px solid var(--gold);border-radius:6px;box-shadow:0 3px 8px rgba(80,20,0,.25);min-height:0}
+.col6 .a{grid-row:span 2}
+.cv-band{flex:none;text-align:center;padding:8px 18px 0}
+.cv-band .e{font:700 13px var(--f-ui);color:var(--red);text-transform:uppercase;letter-spacing:.04em}
+.cv-band .e2{font:600 12px var(--f-body);color:var(--muted);margin-top:2px}
+
+/* Mục lục */
+.toc{display:flex;flex-direction:column;gap:2px}
+.toc a{display:flex;align-items:center;gap:7px;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid #e2c48b;border-radius:14px;padding:2px 9px 2px 2px;font:600 .8em var(--f-ui);cursor:pointer}
+.toc a:hover{border-color:var(--red);background:#fff}
+.toc a *{pointer-events:none}
+.toc a .n{flex:none;width:2.1em;height:1.65em;border-radius:12px;background:var(--red);color:var(--gold-l);display:grid;place-items:center;font:800 .95em var(--f-ui)}
+.toc a .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.toc a .p{flex:none;color:var(--red);font-weight:700}
+.toc a.sec{background:transparent;border:none;padding:4px 2px 0;font:700 .76em var(--f-ui);color:var(--red-d);letter-spacing:.06em;text-transform:uppercase;cursor:default}
+
+/* Biểu đồ */
+.bar2{height:1.5em;border-radius:4px;background:#efe0c2;position:relative;overflow:hidden;display:flex}
+.bar2 i{display:block;height:100%}
+.kpi{display:grid;grid-template-columns:auto 1fr;gap:.2em 1em;align-items:center}
+.big{font:800 2.6em/1 var(--f-title);color:var(--red)}
+.gauge{position:relative;width:9em;height:9em}
+.gauge svg{width:100%;height:100%}
+.gauge .v{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font:800 2.5em/1 var(--f-title);color:var(--red)}
+.gauge .v small{display:block;font:700 .26em var(--f-ui);color:var(--red-d);letter-spacing:.06em}
+
+/* Điểm nghẽn */
+.dn{display:grid;grid-template-columns:7.6em 1fr;border-radius:8px;overflow:hidden;border:1px solid #e0c287;background:var(--card);flex:1 1 0;min-height:0}
+.dn .h{background:var(--c);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.25em;padding:.4em;text-align:center;font:800 .95em/1.1 var(--f-ui);text-transform:uppercase}
+.dn .h svg{width:2em;height:2em}
+.dn .h .no{font:800 1.5em/1 var(--f-title);opacity:.85}
+.dn .c{padding:.45em .8em;display:flex;align-items:center}
+.dn ul.ls li::before{background:var(--c)}
+
+.nv{display:grid;grid-template-columns:auto 1fr;gap:1em;align-items:center;background:var(--card);border:1px solid #e0c287;border-radius:8px;padding:.55em .8em .55em .55em}
+.nv .n{width:2.7em;height:2.7em;border-radius:50%;background:linear-gradient(var(--red-l),var(--red-d));color:var(--gold-l);display:grid;place-items:center;font:800 1.35em var(--f-title);border:1.5px solid var(--gold)}
+.nv b.t{display:block;font:700 .92em var(--f-ui);color:var(--red);text-transform:uppercase;margin-bottom:.15em}
+
+.flow{display:flex;align-items:stretch;gap:.6em}
+.flow .node{flex:1 1 0;background:var(--card);border:1.5px solid var(--gold);border-radius:10px;padding:.6em .7em;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:.2em;min-width:0}
+.flow .node b{font:800 1.12em/1.15 var(--f-ui);color:var(--red);text-transform:uppercase}
+.flow .node small{font:600 .8em var(--f-ui);color:var(--muted)}
+.flow .node.on{background:linear-gradient(135deg,var(--red-l),var(--red-d));border-color:var(--gold-l)}
+.flow .node.on b{color:var(--gold-l)}.flow .node.on small{color:#ffe3b0}
+.flow .ar{flex:none;display:grid;place-items:center;color:var(--gold-d)}
+.flow .ar svg{width:2.2em;height:2.2em}
+.stamp{display:inline-block;font:800 .75em var(--f-ui);color:var(--red);border:1.5px solid var(--red);border-radius:4px;padding:.1em .5em;transform:rotate(-4deg);text-transform:uppercase;letter-spacing:.06em;align-self:center}
+.bigq{font:italic 700 1.5em/1.3 var(--f-body);color:var(--red-d);text-align:center;text-wrap:balance}
+.bigq::before,.bigq::after{font:800 1.6em/0 var(--f-body);color:var(--gold);vertical-align:-.3em}
+.bigq::before{content:"“";margin-right:.08em}.bigq::after{content:"”";margin-left:.04em}
+.bd p.bigq,p.bigq{text-align:center}
+.who{text-align:center;font:700 .85em var(--f-ui);color:var(--red);text-transform:uppercase;letter-spacing:.08em;margin-top:.3em}
+.mini{font-size:.9em}
+.ic{width:1.3em;height:1.3em;vertical-align:-.25em}
+.phone{width:7.2em;flex:none;border-radius:1.1em;background:#2b1b12;padding:.45em;box-shadow:0 4px 10px rgba(0,0,0,.25)}
+.phone .s{border-radius:.75em;background:linear-gradient(#fff,#f7ead0);height:100%;padding:.6em .45em;display:flex;flex-direction:column;gap:.35em;align-items:center;text-align:center}
+.phone .ap{width:3em;height:3em;border-radius:.8em;background:linear-gradient(var(--red-l),var(--red-d));color:var(--gold-l);display:grid;place-items:center;font:800 .8em var(--f-ui)}
+.phone .s span{font:700 .72em var(--f-ui);color:var(--red-d)}
+.phone .s em{font:600 .62em var(--f-ui);font-style:normal;color:#fff;background:#1f5fa8;border-radius:10px;padding:.15em .5em}
+.dots14{display:grid;grid-template-columns:repeat(7,1fr);gap:.4em}
+.dots14 span{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--red-l),var(--red-d));border:1.5px solid var(--gold);display:grid;place-items:center;color:var(--gold-l);font:800 .8em var(--f-ui);max-width:100%}
+.back .pi{background:linear-gradient(#fbefd6,#fff8ea 40%,#fbefd6)}
+
+/* phóng to */
+.zoom{position:fixed;inset:0;z-index:50;background:rgba(20,6,5,.94);display:flex;flex-direction:column}
+.zoom .zb{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:calc(8px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) 8px max(16px,env(safe-area-inset-left,0px))}
+.zoom .zc{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:8px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px))}
+.zoom .zw{margin:0 auto;display:flex;flex-direction:column;gap:14px;align-items:center}
+.zoom .zp{overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.5);flex:none}
+.zoom .zp .pi{transform:scale(var(--zk,1))}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* ===== Khung trình đọc v2 ===== */
+body{background:#1a0807}
+#bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+#bg .ph{position:absolute;inset:-60px;background:url(img/landmarks.jpg) center/cover;filter:blur(38px) saturate(1.3);opacity:.32;transform:scale(1.1)}
+#bg .tint{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 45%,rgba(120,20,18,.35),rgba(26,8,7,.92) 75%),linear-gradient(#2a0c0b00,#120504)}
+#bg .rays{position:absolute;left:50%;top:-20%;width:160vmax;height:160vmax;margin-left:-80vmax;background:repeating-conic-gradient(from 0deg,rgba(242,209,122,.035) 0 6deg,transparent 6deg 18deg);animation:spin 160s linear infinite;mask:radial-gradient(circle,#000 0,transparent 60%);-webkit-mask:radial-gradient(circle,#000 0,transparent 60%)}
+#fx{position:fixed;inset:0;z-index:1;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.app{position:relative;z-index:2;padding-block:8px 10px;gap:6px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px}
+.brand img{width:40px;height:40px;box-shadow:0 0 0 2px rgba(242,209,122,.5),0 4px 14px rgba(0,0,0,.4)}
+.brand b{font-size:22px;background:linear-gradient(#fff3c8,#e6b552);-webkit-background-clip:text;background-clip:text;color:transparent}
+.now{flex:1;min-width:0;text-align:center;font:600 13px var(--f-ui);color:#e9cf9c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.now b{color:#fff1cf;font-weight:700}
+.btn{background:rgba(60,18,16,.55);border-color:rgba(242,209,122,.28);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background .2s,border-color .2s,transform .15s}
+.btn:hover{background:rgba(120,30,25,.7);border-color:var(--gold-l);transform:translateY(-1px)}
+.btn.on{background:linear-gradient(var(--gold-l),var(--gold));color:#3a1008;border-color:#ffe9a8}
+.btn:disabled{opacity:.35;cursor:default;transform:none}
+.stage{position:relative}
+#wrap{position:relative;transition:transform .7s cubic-bezier(.2,.8,.2,1),opacity .9s ease}
+#wrap.pre{opacity:0;transform:translateY(26px) scale(.94)}
+.bshadow{position:absolute;left:0;right:0;bottom:-26px;height:40px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(0,0,0,.6),transparent 70%);filter:blur(6px);pointer-events:none;transition:left .7s,width .7s}
+.edge{position:absolute;top:0;bottom:0;pointer-events:none;z-index:3;transition:width .5s,left .5s,opacity .3s;
+  background:repeating-linear-gradient(90deg,#f6ecd6 0 1px,#cdb88e 1px 2px);box-shadow:0 0 6px rgba(0,0,0,.35)}
+.edge.l{border-radius:3px 0 0 3px}.edge.r{border-radius:0 3px 3px 0}
+.nav{position:absolute;top:50%;z-index:6;width:54px;height:54px;margin-top:-27px;border-radius:50%;display:grid;place-items:center;cursor:pointer;
+  background:radial-gradient(circle at 35% 30%,rgba(216,38,44,.85),rgba(110,12,14,.85));border:1.5px solid rgba(242,209,122,.7);color:#fff3cf;box-shadow:0 6px 18px rgba(0,0,0,.45);transition:transform .2s,opacity .3s}
+.nav:hover{transform:scale(1.08)}
+.nav:focus-visible{outline:2px solid var(--gold-l);outline-offset:3px}
+.nav svg{width:24px;height:24px}
+.nav.p{left:4px}.nav.n{right:4px}
+.nav[disabled]{opacity:0;pointer-events:none}
+.dock{align-self:center;display:flex;align-items:center;gap:6px;padding:7px 10px;border-radius:30px;background:rgba(40,10,9,.62);border:1px solid rgba(242,209,122,.25);box-shadow:0 10px 30px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);max-width:100%;flex-wrap:wrap;justify-content:center}
+.dock .sep{width:1px;height:24px;background:rgba(242,209,122,.25);margin:0 2px}
+.sl{position:relative;display:flex;align-items:center;gap:8px;min-width:0}
+.sl input{width:min(300px,40vw);accent-color:var(--gold);height:4px;cursor:pointer}
+.sl .pgi{min-width:84px}
+.bub{position:absolute;bottom:34px;left:0;transform:translateX(-50%);white-space:nowrap;background:linear-gradient(var(--red-l),var(--red-d));color:#fff3d0;border:1px solid var(--gold-l);border-radius:8px;padding:4px 10px;font:600 12px var(--f-ui);pointer-events:none;opacity:0;transition:opacity .2s}
+.bub.show{opacity:1}
+.hint{position:absolute;left:0;right:0;bottom:-2px;pointer-events:none;transition:opacity .6s}
+/* gáy sách & bóng giấy */
+.page .pi::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:9}
+[class~="--landscape"] .page[class~="--left"] .pi::after{background:linear-gradient(90deg,rgba(255,255,255,.08),rgba(255,255,255,0) 30%,rgba(0,0,0,0) 82%,rgba(60,20,0,.10) 93%,rgba(40,10,0,.32) 100%)}
+[class~="--landscape"] .page[class~="--right"] .pi::after{background:linear-gradient(270deg,rgba(255,255,255,.08),rgba(255,255,255,0) 30%,rgba(0,0,0,0) 82%,rgba(60,20,0,.10) 93%,rgba(40,10,0,.32) 100%)}
+.page{box-shadow:0 0 1px rgba(0,0,0,.2)}
+/* thumbnails */
+.thumbs{position:fixed;left:0;right:0;bottom:0;z-index:40;background:linear-gradient(rgba(30,8,7,.86),rgba(18,5,4,.97));border-top:1px solid rgba(242,209,122,.3);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  padding:12px max(16px,env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));transform:translateY(105%);transition:transform .45s cubic-bezier(.2,.8,.2,1);visibility:hidden}
+.thumbs.open{transform:none;visibility:visible}
+.thumbs .th-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font:700 13px var(--f-ui);color:var(--gold-l);letter-spacing:.06em;text-transform:uppercase}
+.thumbs .row-t{display:flex;gap:4px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x proximity}
+.th{flex:none;width:96px;cursor:pointer;background:none;border:0;padding:0;color:#e9cf9c;font:600 11px var(--f-ui);scroll-snap-align:center;text-align:center}
+.th.gap{margin-left:14px}
+.th .tb{width:96px;height:136px;overflow:hidden;border-radius:2px;box-shadow:0 4px 12px rgba(0,0,0,.5);outline:2px solid transparent;outline-offset:2px;transition:outline-color .2s,transform .2s;position:relative;background:var(--paper)}
+.th .tb .pi{transform:scale(.16);pointer-events:none}
+.th:hover .tb{transform:translateY(-3px)}
+.th.cur .tb{outline-color:var(--gold-l)}
+.th span{display:block;margin-top:6px}
+/* loader */
+#loader{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 40%,#5a1714,#1a0807 70%);transition:opacity .8s ease,visibility .8s}
+#loader.done{opacity:0;visibility:hidden}
+#loader .in{text-align:center;padding:0 24px}
+#loader .ring{width:120px;height:120px;margin:0 auto 18px;position:relative}
+#loader .ring img{position:absolute;inset:14px;width:92px;height:92px;border-radius:50%;background:var(--paper)}
+#loader .ring::before{content:"";position:absolute;inset:0;border-radius:50%;border:3px solid rgba(242,209,122,.15);border-top-color:var(--gold-l);border-right-color:var(--gold);animation:spin 1.1s linear infinite}
+#loader h1{margin:0;font:800 32px/1.1 var(--f-title);letter-spacing:.02em;background:linear-gradient(#fff3c8,#e6b552);-webkit-background-clip:text;background-clip:text;color:transparent}
+#loader p{margin:6px 0 16px;font:600 13px var(--f-ui);color:#d9b98a}
+#loader .pb{width:220px;max-width:70vw;height:4px;margin:0 auto;border-radius:4px;background:rgba(242,209,122,.18);overflow:hidden}
+.enter{margin:22px auto 0;display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 30px;border-radius:26px;border:1.5px solid var(--gold-l);background:linear-gradient(var(--red-l),var(--red-d));color:#fff3d0;font:700 17px var(--f-ui);letter-spacing:.04em;cursor:pointer;box-shadow:0 0 0 0 rgba(242,209,122,.6);animation:pulseE 1.8s ease-out infinite}
+.enter svg{width:20px;height:20px}
+.enter:focus-visible{outline:2px solid var(--gold-l);outline-offset:3px}
+@keyframes pulseE{0%{box-shadow:0 0 0 0 rgba(242,209,122,.55)}100%{box-shadow:0 0 0 18px rgba(242,209,122,0)}}
+#loader .pb i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-l));transition:width .3s}
+.toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);z-index:60;background:linear-gradient(var(--red-l),var(--red-d));color:#fff3d0;border:1px solid var(--gold-l);padding:9px 16px;border-radius:22px;font:600 13px var(--f-ui);opacity:0;transition:opacity .3s,transform .3s;pointer-events:none;max-width:calc(100vw - 32px);text-align:center;user-select:all}
+.toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.zoom{z-index:70}
+.zoom .zp{border-radius:2px}
+@media (max-width:720px){.brand b{font-size:17px}.nav{display:none}#bFirst,#bLast{display:none}.now{display:none}.dock{gap:4px;padding:6px 8px;border-radius:18px}.sl{order:-1;flex-basis:100%;justify-content:center}.sl input{width:min(260px,60vw)}.dock .sep{display:none}.btn{height:34px;min-width:34px;padding:0 9px}}
+@media (prefers-reduced-motion:reduce){#bg .rays{animation:none}#wrap{transition:none}}
+</style>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <linearGradient id="gR" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#D8262C"/><stop offset="1" stop-color="#7E0B10"/></linearGradient>
+  <linearGradient id="gG" x1="0" x2="1"><stop offset="0" stop-color="#9A6A17"/><stop offset=".5" stop-color="#F2D17A"/><stop offset="1" stop-color="#9A6A17"/></linearGradient>
+  <linearGradient id="gP" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#F7B6C8"/><stop offset="1" stop-color="#E0608A"/></linearGradient>
+  <linearGradient id="gL" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#5DA34A"/><stop offset="1" stop-color="#2F6E2C"/></linearGradient>
+ </defs>
+ <symbol id="lotus" viewBox="0 0 64 46">
+  <ellipse cx="18" cy="38" rx="17" ry="7" fill="url(#gL)"/><ellipse cx="48" cy="40" rx="14" ry="5.5" fill="url(#gL)" opacity=".9"/>
+  <path d="M32 6c5 7 6 17 0 28-6-11-5-21 0-28z" fill="url(#gP)" stroke="#c94a73" stroke-width=".6"/>
+  <path d="M32 34c-2-10-9-17-17-19 0 9 6 17 17 19z" fill="url(#gP)" stroke="#c94a73" stroke-width=".6"/>
+  <path d="M32 34c2-10 9-17 17-19 0 9-6 17-17 19z" fill="url(#gP)" stroke="#c94a73" stroke-width=".6"/>
+  <path d="M32 35c-7-3-14-3-19 1 5 3 13 3 19-1zM32 35c7-3 14-3 19 1-5 3-13 3-19-1z" fill="#F4A0B8" stroke="#c94a73" stroke-width=".5"/>
+ </symbol>
+ <symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></symbol>
+ <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3.4"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+ <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8l4 4v15H6z"/><path d="M14 2.5v4h4M9 11h6M9 14.5h6M9 18h4"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+ <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 20v-8M10 20V5M15 20v-6M20 20V9M3 20.5h18"/></symbol>
+ <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+ <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20z"/></symbol>
+ <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 5c3-1.3 6-1.3 9 .5 3-1.8 6-1.8 9-.5v14c-3-1.3-6-1.3-9 .5-3-1.8-6-1.8-9-.5z"/><path d="M12 5.5v14"/></symbol>
+ <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+ <symbol id="i-build" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l6-4v17M10 21V9h10v12M3 21h18M13 12h1M16.5 12h1M13 15.5h1M16.5 15.5h1M6.5 10v.01M6.5 13v.01M6.5 16v.01"/></symbol>
+ <symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V3M5 4h12l-2.5 4L17 12H5"/></symbol>
+ <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></symbol>
+ <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+ <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4.5a3.5 3.5 0 0 0 3.8 3.5M16 6h3.5a3.5 3.5 0 0 1-3.8 3.5M12 13v4M9.5 17h5v3.5h-5z"/></symbol>
+ <symbol id="i-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.7 2.7L16.2 9.5"/></symbol>
+ <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3"/></symbol>
+ <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 16v-3.5l2-5h14l2 5V16zM3 16v2.5h3V16M18 16v2.5h3V16"/><circle cx="7" cy="12.8" r="1"/><circle cx="17" cy="12.8" r="1"/></symbol>
+ <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15M5 19l7-7"/></symbol>
+ <symbol id="i-drop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3s6.5 7.2 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10.2 12 3 12 3z"/><path d="M9 15a3 3 0 0 0 3 3"/></symbol>
+ <symbol id="i-food" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/></symbol>
+ <symbol id="i-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 21.5c-4 0-7-2.8-7-6.6 0-4.5 4.5-6.6 4.5-11.4 3.2 1.8 4.4 4.6 4.3 7 1.2-.7 2-1.9 2.2-3.4 1.6 1.8 3 4.6 3 7.6 0 4-3 6.8-7 6.8z"/></symbol>
+ <symbol id="i-dna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3c0 5 10 6 10 9s-10 4-10 9M17 3c0 5-10 6-10 9s10 4 10 9M8.5 6h7M8.5 18h7M10 12h4"/></symbol>
+ <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></symbol>
+ <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></symbol>
+ <symbol id="i-mega" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3 10v4h3l9 5V5L6 10zM18 9a4 4 0 0 1 0 6"/></symbol>
+ <symbol id="i-temple" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5M4 9h16M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 18h18M2 21h20"/></symbol>
+ <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M14 6l6 6-6 6"/></symbol>
+ <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="9" width="17" height="11.5" rx="1"/><path d="M2.5 9h19V5.5h-19zM12 5.5v15M12 5.5C10 2 6.5 2.5 7.5 5.5M12 5.5c2-3.5 5.5-3 4.5 0"/></symbol>
+ <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3.5-3.5a4 4 0 0 0-5.7-5.7L12 6.3M14 10a4 4 0 0 0-5.7 0l-3.5 3.5a4 4 0 0 0 5.7 5.7l1.5-1.5"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.3-7-11.5a7 7 0 0 1 14 0C19 14.7 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+ <symbol id="i-id" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><circle cx="8.5" cy="11" r="2.2"/><path d="M5.5 16c.5-1.6 1.7-2.4 3-2.4s2.5.8 3 2.4M14 10h5M14 13.5h4"/></symbol>
+ <symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h14l-3.5-3.5M20 16H6l3.5 3.5"/></symbol>
+ <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+ <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 13.5l4-4 4 1.5 3-2.5 3 1 5 4M6.5 9.5l-1 6 4 4.5 3-1 3 1 2.5-2.5-6-6M10.5 17l-2-2M13 18.5l-2-2"/></symbol>
+ <symbol id="i-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+ <symbol id="i-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+ <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></symbol>
+ <symbol id="i-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6"/></symbol>
+ <symbol id="i-full" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+ <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+ <symbol id="i-first" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 5l-7 7 7 7M7 5v14"/></symbol>
+ <symbol id="i-last" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 5l7 7-7 7M17 5v14"/></symbol>
+ <symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/></symbol>
+ <symbol id="i-play2" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l10.5-6.5z"/></symbol>
+ <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6.5" y="5" width="4" height="14" rx="1"/><rect x="13.5" y="5" width="4" height="14" rx="1"/></symbol>
+ <symbol id="i-snd" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5zM15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+ <symbol id="i-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5zM16 9.5l5 5M21 9.5l-5 5"/></symbol>
+</svg>
+
+<div id="loader"><div class="in">
+ <div class="ring"><img src="img/logo.png" alt=""></div>
+ <h1>THÔNG TIN PHƯỜNG BA ĐÌNH</h1>
+ <p>Ấn phẩm số · Tháng 11/2026 · Đang mở…</p>
+ <div class="pb"><i id="pbar"></i></div>
+ <button id="enter" class="enter" hidden><svg><use href="#i-play2"/></svg>Mở ấn phẩm</button>
+</div></div>
+<div id="bg"><div class="ph"></div><div class="rays"></div><div class="tint"></div></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<div class="app">
+ <div class="top">
+  <div class="brand"><img src="img/logo.png" alt=""><div><b>THÔNG TIN PHƯỜNG BA ĐÌNH</b><br><span>Ấn phẩm số · Tháng 11/2026</span></div></div>
+  <div class="now" id="now"></div>
+  <div class="ctrls">
+   <button class="btn" id="bShare" title="Sao chép liên kết trang này"><svg><use href="#i-link"/></svg><span class="lb">Chia sẻ</span></button>
+   <button class="btn" id="bFull" title="Toàn màn hình (F)" aria-label="Toàn màn hình"><svg><use href="#i-full"/></svg></button>
+  </div>
+ </div>
+ <div class="stage" id="stage">
+  <button class="nav p" id="nPrev" aria-label="Trang trước"><svg><use href="#i-prev"/></svg></button>
+  <div id="wrap" class="pre">
+   <div class="bshadow" id="bsh"></div>
+   <div class="edge l" id="edL"></div><div class="edge r" id="edR"></div>
+   <div id="book">
+
+<!-- ========== 01 BÌA ========== -->
+<section class="page cover" data-density="hard"><div class="pi cvimg"><div class="cvbg"></div><img class="cvph" src="img/cover3.jpg" alt="Ấn phẩm số Thông tin phường Ba Đình – Thông tin nổi bật tháng 11/2026"></div></section>
+
+<!-- ========== 02 MỤC LỤC ========== -->
+<section class="page" data-t="MỤC LỤC" data-s="Bản tin nội bộ phường Ba Đình tháng 11-2026"><div class="bd">
+ <div class="row r21 grow">
+  <div class="col">
+   <div class="box" style="display:flex;flex-direction:column;gap:.5em"><div class="ht"><svg><use href="#i-book"/></svg>Lời mở đầu</div>
+    <p>Tháng 11/2026 đánh dấu tròn một năm Bản tin phường Ba Đình chính thức ra mắt, với <span class="d">12 số phát hành</span>, từng bước khẳng định vai trò là kênh thông tin phản ánh toàn diện các hoạt động chính trị, kinh tế, văn hóa, xã hội và nhịp sống của địa phương.</p>
+    <p>Tiếp nối hành trình ấy, Ban Biên tập chính thức ra mắt <span class="d">Ấn phẩm số “Thông tin phường Ba Đình”</span>, phát hành song song với Bản tin phường Ba Đình, mở ra một phương thức truyền tải thông tin mới trên không gian số.</p>
+    <p>Với hình thức thể hiện hiện đại, trực quan, sinh động, “Thông tin phường Ba Đình” hướng tới mang đến góc nhìn đa chiều, có chiều sâu về những sự kiện, hoạt động nổi bật trong tháng; lan tỏa những mô hình hay, cách làm sáng tạo, những giá trị tốt đẹp và dấu ấn đổi mới của phường.</p>
+   </div>
+   <div class="box red" style="text-align:center;padding:.8em .9em"><div style="font:italic 700 1.12em/1.35 var(--f-body);color:#fff4d6;text-wrap:balance">Một hình thức mới – Một góc nhìn mới – Một Ba Đình không ngừng đổi mới và phát triển.</div><div style="font:700 .78em var(--f-ui);color:var(--gold-l);letter-spacing:.08em;text-transform:uppercase;margin-top:.4em">Ban Biên tập</div></div>
+   <div class="fig grow"><div class="im"><img src="img/p27.jpg" alt=""></div></div>
+  </div>
+  <nav class="toc" id="toc">
+   <a class="sec">Chào mừng 72 năm Giải phóng Thủ đô</a>
+   <a data-go="3"><span class="n">03</span><span class="t">Người tốt, việc tốt</span></a>
+   <a data-go="4"><span class="n">04</span><span class="t">Khởi công các công trình chào mừng</span></a>
+   <a data-go="5"><span class="n">05</span><span class="t">Tri ân các thế hệ người chiến sỹ Thủ đô</span></a>
+   <a class="sec">Xây dựng Đảng, chính quyền</a>
+   <a data-go="6"><span class="n">06</span><span class="t">Tổ chức lại các phòng chuyên môn</span></a>
+   <a data-go="7"><span class="n">07</span><span class="t">Sắp xếp mô hình tổ chức Đảng trực thuộc</span></a>
+   <a data-go="8"><span class="n">08</span><span class="t">Hoàn thành các chỉ tiêu, nhiệm vụ năm 2026</span></a>
+   <a data-go="9"><span class="n">09</span><span class="t">Bàn giao Cơ quan Thường trực BCĐ 57</span></a>
+   <a data-go="10"><span class="n">10</span><span class="t">Đối thoại với Nhân dân</span></a>
+   <a data-go="11"><span class="n">11</span><span class="t">Tập huấn xây dựng Đảng và chuyển đổi số</span></a>
+   <a data-go="12"><span class="n">12</span><span class="t">Bàn giao, tiếp nhận tổ chức đảng</span></a>
+   <a class="sec">Kinh tế - Văn hóa - Xã hội</a>
+   <a data-go="13"><span class="n">13</span><span class="t">Lễ hội đền Quán Thánh</span></a>
+   <a data-go="14"><span class="n">14</span><span class="t">Chuyển đổi số lan tỏa tiện ích số</span></a>
+   <a data-go="15"><span class="n">15</span><span class="t">Giải ngân vốn đầu tư công đạt 100%</span></a>
+   <a data-go="16"><span class="n">16</span><span class="t">Phong trào học tập suốt đời</span></a>
+   <a data-go="17"><span class="n">17</span><span class="t">Bảo đảm an ninh, trật tự</span></a>
+   <a class="sec">Chuyên đề - Đoàn thể</a>
+   <a data-go="18"><span class="n">18</span><span class="t">Học tập và thực hành theo Bác</span></a>
+   <a data-go="19"><span class="n">19</span><span class="t">MTTQ và Hội Liên hiệp Phụ nữ</span></a>
+   <a data-go="20"><span class="n">20</span><span class="t">Đoàn TN, Công đoàn, Cựu chiến binh</span></a>
+   <a data-go="21"><span class="n">21</span><span class="t">Mô hình hay, cách làm tốt</span></a>
+   <a data-go="22"><span class="n">22</span><span class="t">Góc giải quyết 5 điểm nghẽn</span></a>
+   <a data-go="23"><span class="n">23</span><span class="t">Nhiệm vụ trọng tâm tháng 11/2026</span></a>
+  </nav>
+ </div>
+</div></section>
+
+<!-- ========== 03 NGƯỜI TỐT VIỆC TỐT ========== -->
+<section class="page" data-e="Chào mừng 72 năm Ngày Giải phóng Thủ đô" data-t="NGƯỜI TỐT, VIỆC TỐT" data-s="Lan tỏa những tấm gương “Người tốt, việc tốt”"><div class="bd">
+ <p class="lead"><span class="dc">T</span>rong không khí thi đua chào mừng kỷ niệm 72 năm Ngày Giải phóng Thủ đô, <span class="d">ngày 08/10</span>, phường Ba Đình tổ chức Hội nghị biểu dương điển hình tiên tiến, “Người tốt, việc tốt” năm 2026. Tại Hội nghị, <span class="d">26 cá nhân</span> đã được Chủ tịch UBND phường tặng danh hiệu <span class="d">“Người tốt, việc tốt”</span>. Các tấm gương được vinh danh không nằm ở những thành tích lớn lao, mà trước hết ở tinh thần trách nhiệm và những việc làm cụ thể, thiết thực. Đó là sự tận tụy trong công việc, trách nhiệm với Nhân dân; tích cực tham gia các hoạt động cộng đồng; đóng góp cho công tác an sinh xã hội, giữ gìn an ninh trật tự, xây dựng đời sống văn hóa hay những nỗ lực trong giáo dục và các hoạt động xã hội, nhân đạo.</p>
+ <div class="fig grow" style="flex-grow:1.3"><div class="im"><img src="img/p21.jpg" alt=""></div><div class="cap"><b>Tôn vinh 26 tấm gương “Người tốt, việc tốt”</b>Chủ tịch UBND phường trao danh hiệu “Người tốt, việc tốt” năm 2026 cho các cá nhân tiêu biểu.</div></div>
+ <div class="row r3 grow">
+  <div class="fig"><div class="im"><img src="img/p22.jpg" alt=""></div><div class="cap"><b>Trao danh hiệu</b>Các cá nhân nhận danh hiệu tại Hội nghị.</div></div>
+  <div class="fig"><div class="im"><img src="img/p24.jpg" alt=""></div><div class="cap"><b>Giao lưu điển hình</b>Chia sẻ những việc làm thiết thực, ý nghĩa.</div></div>
+  <div class="fig"><div class="im"><img src="img/p25.jpg" alt=""></div><div class="cap"><b>Biểu dương gương sáng</b>Tặng hoa chúc mừng các điển hình tiên tiến.</div></div>
+ </div>
+ <div class="kh"><span class="pill">Điểm nhấn</span></div>
+ <div class="stats">
+  <div class="st"><span class="ci"><svg><use href="#i-people"/></svg></span><span class="tx"><b>26</b>cá nhân được biểu dương</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-heart"/></svg></span><span class="tx">Trách nhiệm với Nhân dân</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-hand"/></svg></span><span class="tx">An sinh xã hội, nhân đạo</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-star"/></svg></span><span class="tx">Việc làm cụ thể, thiết thực</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 04 KHỞI CÔNG ========== -->
+<section class="page" data-e="Chào mừng 72 năm Ngày Giải phóng Thủ đô" data-t="KHỞI CÔNG CÁC CÔNG TRÌNH CHÀO MỪNG" data-s="Nâng cao chất lượng không gian sống và diện mạo đô thị"><div class="bd">
+ <p class="lead"><span class="dc">C</span>ũng trong dịp này, UBND phường đã khởi công dự án <span class="d">tu bổ, tôn tạo di tích đình Tây Luông</span> và dự án <span class="d">chỉnh trang phố Phan Đình Phùng</span>, cải tạo vườn hoa góc Yên Phụ - Hàng Than và đầu tư các công trình trường học, hạ tầng đô thị, góp phần nâng cao chất lượng không gian sống và diện mạo đô thị trên địa bàn.</p>
+ <div class="fig grow" style="flex-grow:1.5"><div class="im"><img src="img/p02.jpg" alt=""></div><div class="cap"><b>Khởi công tu bổ, tôn tạo di tích đình Tây Luông</b>Các đại biểu thực hiện nghi thức khởi công dự án.</div></div>
+ <div class="row r2 grow">
+  <div class="fig"><div class="im"><img src="img/p01.jpg" alt=""></div><div class="cap"><b>Lễ khởi công</b>“Giữ gìn, phát huy giá trị lịch sử văn hóa đình Tây Luông”.</div></div>
+  <div class="fig"><div class="im"><img src="img/p00.jpg" alt=""></div><div class="cap"><b>Di tích đình Tây Luông</b>Không gian thờ tự tại di tích.</div></div>
+ </div>
+ <div class="box red">
+  <div class="ht"><svg style="color:var(--gold-l)"><use href="#i-build"/></svg>Các công trình chào mừng</div>
+  <div class="row r2" style="gap:.35em 1.2em">
+   <ul class="ls"><li>Tu bổ, tôn tạo di tích đình Tây Luông</li><li>Chỉnh trang phố Phan Đình Phùng</li><li>Cải tạo vườn hoa góc Yên Phụ - Hàng Than</li></ul>
+   <ul class="ls"><li>Đầu tư các công trình trường học</li><li>Đầu tư các công trình hạ tầng đô thị</li></ul>
+  </div>
+ </div>
+</div></section>
+
+<!-- ========== 05 TRI ÂN ========== -->
+<section class="page" data-e="Chào mừng 72 năm Ngày Giải phóng Thủ đô" data-t="TRI ÂN CÁC THẾ HỆ NGƯỜI CHIẾN SỸ THỦ ĐÔ" data-s="80 năm Ngày truyền thống Lực lượng vũ trang Thủ đô (19/10/1946 – 19/10/2026)"><div class="bd">
+ <p class="lead"><span class="dc">K</span>ỷ niệm 80 năm Ngày truyền thống Lực lượng vũ trang Thủ đô (19/10/1946 – 19/10/2026), <span class="d">ngày 15/10</span>, Đảng ủy - HĐND - UBND - UB MTTQ Việt Nam phường tổ chức tọa đàm <span class="d">“80 năm vinh quang, tự hào người chiến sĩ Thủ đô”</span>, gặp mặt cán bộ, quân nhân, viên chức quốc phòng đã nghỉ hưu, nghỉ công tác trên địa bàn. Tại chương trình, các đại biểu xem phim tư liệu về truyền thống 80 năm xây dựng, chiến đấu và trưởng thành của LLVT Thủ đô.</p>
+ <div class="row r12 grow" style="flex-grow:1.2">
+  <div class="fig"><div class="im"><img src="img/p29.jpg" alt=""></div><div class="cap"><b>Tọa đàm với nhân chứng lịch sử</b>Ôn lại những năm tháng chiến đấu gian khổ bảo vệ Thủ đô.</div></div>
+  <div class="col">
+   <div class="fig grow"><div class="im"><img src="img/p28.jpg" alt=""></div><div class="cap"><b>Trao Giấy khen 10 tập thể</b></div></div>
+   <div class="fig grow"><div class="im"><img src="img/p27.jpg" alt=""></div><div class="cap"><b>Gặp mặt, tọa đàm</b></div></div>
+  </div>
+ </div>
+ <div class="box">
+  <p>Tham gia, tọa đàm với nhân chứng lịch sử: đồng chí <b>Nguyễn Văn Độ</b> - chiến sĩ phòng không trực tiếp tham gia chiến đấu bảo vệ Hà Nội trong 12 ngày đêm tháng 12/1972; bà <b>Vũ Thị Nghĩa</b> - Thượng tá Quân đội nhân dân Việt Nam đã nghỉ hưu; và bạn <b>Lê Nguyễn Bình An</b> - Phó Bí thư Đoàn trường THPT Phan Đình Phùng, cùng ôn lại những năm tháng chiến đấu gian khổ, chia sẻ những câu chuyện, kỷ niệm sâu sắc về tinh thần chiến đấu kiên cường, ý chí quyết tâm bảo vệ Thủ đô của các thế hệ cán bộ, chiến sĩ. Qua đó, góp phần giáo dục truyền thống yêu nước, khơi dậy niềm tự hào dân tộc, bồi đắp bản lĩnh chính trị, ý thức trách nhiệm cho cán bộ, chiến sĩ và thế hệ trẻ trong sự nghiệp xây dựng, bảo vệ Tổ quốc hiện nay.</p>
+ </div>
+ <p>Nhân dịp này, UBND phường trao <span class="d">Giấy khen tặng 10 tập thể</span> có thành tích xuất sắc trong các hoạt động chào mừng kỷ niệm.</p>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-flag"/></svg></span><span class="tx"><b>80</b>năm truyền thống</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-chat"/></svg></span><span class="tx">Tọa đàm với nhân chứng lịch sử</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-book"/></svg></span><span class="tx">Giáo dục truyền thống</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-trophy"/></svg></span><span class="tx"><b>10</b>tập thể được khen</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 06 PHÒNG CHUYÊN MÔN ========== -->
+<section class="page" data-t="TỔ CHỨC LẠI CÁC PHÒNG CHUYÊN MÔN" data-s="UBND phường công bố quyết định tổ chức lại các phòng chuyên môn"><div class="bd">
+ <p class="lead"><span class="dc">T</span>heo <span class="d">Nghị quyết số 29/NQ-HĐND ngày 24/9/2026</span> của HĐND phường, <span class="d">từ ngày 01/10</span>, UBND phường có <span class="d">5 phòng chuyên môn</span> gồm: Văn phòng HĐND và UBND phường, phòng Nội vụ - Tư pháp, phòng Văn hóa - Xã hội, phòng Kinh tế và phòng Hạ tầng - Đô thị - Môi trường. Tại hội nghị, lãnh đạo phường đã trao quyết định thành lập và bổ nhiệm lãnh đạo các phòng. Lãnh đạo Đảng ủy, HĐND và UBND phường Ba Đình cũng chứng kiến lễ ký biên bản bàn giao nhiệm vụ giữa các phòng chuyên môn của UBND phường sau sắp xếp.</p>
+ <div class="row r21 grow">
+  <div class="box red" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:.4em">
+   <div style="font:800 6.5em/0.9 var(--f-title);color:var(--gold-l)">05</div>
+   <div style="font:800 1.3em var(--f-ui);text-transform:uppercase;letter-spacing:.04em">phòng chuyên môn</div>
+   <div style="font:600 .95em var(--f-ui);color:#ffe0a8">thuộc UBND phường Ba Đình</div>
+   <div style="width:60%;height:1px;background:var(--gold-l);margin:.4em 0"></div>
+   <div style="font:700 1em var(--f-ui)">Hoạt động từ</div>
+   <div style="font:800 2.6em/1 var(--f-title);color:var(--gold-l)">01/10/2026</div>
+  </div>
+  <div class="col" style="justify-content:space-between">
+   <div class="nv"><span class="n">1</span><div><b class="t">Văn phòng HĐND và UBND phường</b></div></div>
+   <div class="nv"><span class="n">2</span><div><b class="t">Phòng Nội vụ - Tư pháp</b></div></div>
+   <div class="nv"><span class="n">3</span><div><b class="t">Phòng Văn hóa - Xã hội</b></div></div>
+   <div class="nv"><span class="n">4</span><div><b class="t">Phòng Kinh tế</b></div></div>
+   <div class="nv"><span class="n">5</span><div><b class="t">Phòng Hạ tầng - Đô thị - Môi trường</b></div></div>
+  </div>
+ </div>
+ <div class="kh"><span class="pill">Các mốc triển khai</span></div>
+ <div class="flow">
+  <div class="node"><b>24/9/2026</b><small>HĐND phường ban hành Nghị quyết số 29/NQ-HĐND</small></div>
+  <div class="ar"><svg><use href="#i-arrow"/></svg></div>
+  <div class="node on"><b>01/10/2026</b><small>UBND phường có 5 phòng chuyên môn</small></div>
+  <div class="ar"><svg><use href="#i-arrow"/></svg></div>
+  <div class="node"><b>Trao quyết định</b><small>Thành lập và bổ nhiệm lãnh đạo các phòng</small></div>
+  <div class="ar"><svg><use href="#i-arrow"/></svg></div>
+  <div class="node"><b>Bàn giao</b><small>Ký biên bản bàn giao nhiệm vụ sau sắp xếp</small></div>
+ </div>
+</div></section>
+
+<!-- ========== 07 TỔ CHỨC ĐẢNG ========== -->
+<section class="page" data-t="SẮP XẾP MÔ HÌNH TỔ CHỨC ĐẢNG TRỰC THUỘC" data-s="Hội nghị công bố các quyết định về sắp xếp tổ chức Đảng trực thuộc"><div class="bd">
+ <p class="lead"><span class="dc">N</span>gày <span class="d">9/10</span>, Đảng ủy phường tổ chức hội nghị công bố các quyết định về sắp xếp tổ chức Đảng trực thuộc. Tại hội nghị, đồng chí Trưởng ban Xây dựng Đảng phường đã công bố Quyết định của Ban Thường vụ Đảng ủy phường về <span class="d">kết thúc hoạt động</span> của Đảng bộ các cơ quan Đảng và Đảng bộ UBND phường, đồng thời <span class="d">thành lập 14 chi bộ trực thuộc</span> theo mô hình mới. Việc sắp xếp tăng cường sự lãnh đạo trực tiếp, toàn diện của Đảng ủy phường đối với các đảng bộ, chi bộ đáp ứng yêu cầu nhiệm vụ trong tình hình mới.</p>
+ <div class="kh"><span class="pill">Mô hình sau sắp xếp</span></div>
+ <div class="flow grow" style="align-items:center">
+  <div class="col" style="flex:1 1 0">
+   <div class="node" style="flex:none"><b>Đảng bộ các cơ quan Đảng</b><span class="stamp">Kết thúc hoạt động</span></div>
+   <div class="node" style="flex:none"><b>Đảng bộ UBND phường</b><span class="stamp">Kết thúc hoạt động</span></div>
+  </div>
+  <div class="ar"><svg><use href="#i-arrow"/></svg></div>
+  <div class="node on" style="flex:1.3 1 0;align-self:stretch;gap:.6em">
+   <div style="font:800 5.4em/0.9 var(--f-title);color:var(--gold-l)">14</div>
+   <b style="font-size:1.35em">chi bộ trực thuộc</b>
+   <small>Thành lập theo mô hình mới, trực thuộc Đảng ủy phường</small>
+   <div class="dots14" style="padding:0 .4em">
+    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span>
+   </div>
+  </div>
+ </div>
+ <div class="row r3">
+  <div class="box" style="text-align:center"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-doc"/></svg><div class="ht" style="justify-content:center;margin:.2em 0 0">Công bố quyết định</div><div class="mini">của Ban Thường vụ Đảng ủy phường</div></div>
+  <div class="box" style="text-align:center"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-target"/></svg><div class="ht" style="justify-content:center;margin:.2em 0 0">Lãnh đạo trực tiếp</div><div class="mini">toàn diện đối với các đảng bộ, chi bộ</div></div>
+  <div class="box" style="text-align:center"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-check"/></svg><div class="ht" style="justify-content:center;margin:.2em 0 0">Đáp ứng nhiệm vụ</div><div class="mini">trong tình hình mới</div></div>
+ </div>
+</div></section>
+
+<!-- ========== 08 RÀ SOÁT CHỈ TIÊU ========== -->
+<section class="page" data-t="RÀ SOÁT, TẬP TRUNG HOÀN THÀNH CÁC CHỈ TIÊU, NHIỆM VỤ NĂM 2026" data-s="Tổ đại biểu số 2 HĐND thành phố giám sát tại phường Ba Đình"><div class="bd">
+ <p class="lead"><span class="dc">N</span>gày <span class="d">21/10</span>, Tổ đại biểu số 2 HĐND thành phố Hà Nội phối hợp với Thường trực HĐND phường Ba Đình tổ chức giám sát việc triển khai các chỉ tiêu, nhiệm vụ phát triển kinh tế - xã hội năm 2026 trên địa bàn phường. Theo báo cáo, UBND phường được giao <span class="d">725 nhiệm vụ</span> thuộc <span class="d">14 lĩnh vực</span> quản lý nhà nước, trong đó <span class="d">463 nhiệm vụ</span> thuộc thẩm quyền phường và <span class="d">262 nhiệm vụ</span> do thành phố giao. Tính đến hết tháng 9/2026, phường đã hoàn thành <span class="d">126 nhiệm vụ</span> thành phố giao năm 2026; trong đó, 123 nhiệm vụ được hoàn thành trước ngày 10/9.</p>
+ <div class="fig grow" style="flex-grow:1.4"><div class="im"><img src="img/p09.jpg" alt=""></div><div class="cap"><b>Giám sát việc triển khai chỉ tiêu, nhiệm vụ năm 2026</b>Tổ đại biểu số 2 HĐND thành phố Hà Nội làm việc tại phường Ba Đình.</div></div>
+ <div class="box">
+  <div class="ht"><svg><use href="#i-chart"/></svg>Cơ cấu 725 nhiệm vụ UBND phường được giao</div>
+  <div class="bar2" style="height:1.9em;font:700 .85em var(--f-ui);color:#fff">
+   <i style="width:63.86%;background:var(--red);display:flex;align-items:center;padding-left:.6em">463 thuộc thẩm quyền phường</i>
+   <i style="width:36.14%;background:var(--gold);display:flex;align-items:center;padding-left:.6em;color:var(--ink)">262 do thành phố giao</i>
+  </div>
+  <div style="margin-top:.6em;font:700 .85em var(--f-ui);color:var(--red-d)">Nhiệm vụ thành phố giao đã hoàn thành đến hết tháng 9/2026</div>
+  <div class="bar2" style="height:1.9em;margin-top:.25em;font:700 .85em var(--f-ui)">
+   <i style="width:48.09%;background:linear-gradient(90deg,#1f7a3a,#2f9a4f);color:#fff;display:flex;align-items:center;padding-left:.6em">126 / 262 nhiệm vụ</i>
+  </div>
+ </div>
+ <div class="box red"><div class="ht"><svg style="color:var(--gold-l)"><use href="#i-target"/></svg>Thời gian tới</div><p>Thời gian tới, UBND phường tiếp tục rà soát các nhiệm vụ còn lại, tập trung tháo gỡ khó khăn, vướng mắc trong công tác giải phóng mặt bằng, đẩy nhanh tiến độ đầu tư công, nâng cao hiệu quả quản lý đô thị, hoàn thiện dữ liệu và cải cách thủ tục hành chính; phấn đấu hoàn thành các chỉ tiêu, nhiệm vụ phát triển kinh tế - xã hội năm 2026.</p></div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-doc"/></svg></span><span class="tx"><b>725</b>nhiệm vụ được giao</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-gear"/></svg></span><span class="tx"><b>14</b>lĩnh vực</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-check"/></svg></span><span class="tx"><b>126</b>đã hoàn thành</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-cal"/></svg></span><span class="tx"><b>123</b>xong trước 10/9</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 09 BCĐ 57 ========== -->
+<section class="page" data-t="BÀN GIAO NHIỆM VỤ CƠ QUAN THƯỜNG TRỰC BAN CHỈ ĐẠO 57" data-s="Kiện toàn Ban Chỉ đạo phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số phường"><div class="bd">
+ <p class="lead"><span class="dc">C</span>hiều <span class="d">20/10</span>, Đảng ủy phường tổ chức hội nghị công bố Quyết định về việc kiện toàn Ban Chỉ đạo phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số phường <span class="d">(Ban Chỉ đạo 57)</span>, đồng thời bàn giao nhiệm vụ Cơ quan Thường trực từ <span class="d">Văn phòng Đảng ủy</span> sang <span class="d">Công an phường</span>. Tại hội nghị, hai cơ quan đã ký biên bản bàn giao, tiếp nhận hồ sơ, tài liệu, văn bản chỉ đạo, kế hoạch, báo cáo và các nhiệm vụ đang triển khai. Việc chuyển giao nhằm bảo đảm công tác tham mưu, điều phối và triển khai các nhiệm vụ chuyển đổi số được liên tục, thống nhất, không gián đoạn.</p>
+ <div class="flow">
+  <div class="node"><small>Bên bàn giao</small><b>Văn phòng Đảng ủy</b></div>
+  <div class="ar" style="flex-direction:column;font:700 .75em var(--f-ui);color:var(--red)"><svg><use href="#i-swap"/></svg>Bàn giao</div>
+  <div class="node on"><small>Cơ quan Thường trực mới</small><b>Công an phường</b></div>
+ </div>
+ <div class="fig grow" style="flex-grow:1.6"><div class="im"><img src="img/p10.jpg" alt=""></div><div class="cap"><b>Công bố quyết định kiện toàn Ban Chỉ đạo 57</b>Hai cơ quan ký biên bản bàn giao, tiếp nhận nhiệm vụ Cơ quan Thường trực.</div></div>
+ <div class="row r2 grow">
+  <div class="fig"><div class="im"><img src="img/p12.jpg" alt=""></div><div class="cap"><b>Đại biểu dự hội nghị</b></div></div>
+  <div class="fig"><div class="im"><img src="img/p11.jpg" alt=""></div><div class="cap"><b>Trao đổi tại điểm cầu phường</b></div></div>
+ </div>
+ <div class="kh"><span class="pill">Nội dung bàn giao</span></div>
+ <div class="chips">
+  <span class="chip"><svg><use href="#i-doc"/></svg>Hồ sơ, tài liệu</span>
+  <span class="chip"><svg><use href="#i-flag"/></svg>Văn bản chỉ đạo</span>
+  <span class="chip"><svg><use href="#i-chart"/></svg>Kế hoạch, báo cáo</span>
+  <span class="chip"><svg><use href="#i-gear"/></svg>Nhiệm vụ đang triển khai</span>
+ </div>
+</div></section>
+
+<!-- ========== 10 ĐỐI THOẠI ========== -->
+<section class="page" data-t="ĐỐI THOẠI VỚI NHÂN DÂN" data-s="Hội nghị đối thoại, tháo gỡ kiến nghị của Nhân dân"><div class="bd">
+ <p class="lead"><span class="dc">N</span>gày <span class="d">15-10</span>, Đảng ủy, HĐND, UBND phường tổ chức hội nghị đối thoại giữa Bí thư Đảng ủy, Chủ tịch HĐND, Chủ tịch UBND phường với Ủy ban MTTQ Việt Nam, các tổ chức chính trị - xã hội và đại diện nhân dân, thanh niên trên địa bàn.</p>
+ <div class="fig grow" style="flex-grow:1.5"><div class="im"><img src="img/p41.jpg" alt="" style="object-position:50% 45%"></div><div class="cap"><b>Quang cảnh hội nghị</b>Đông đảo đại diện Nhân dân, MTTQ, các tổ chức chính trị - xã hội và thanh niên tham dự.</div></div>
+ <div class="row r12 grow">
+  <div class="box" style="display:flex;flex-direction:column;justify-content:center"><p>Hội nghị ghi nhận nhiều ý kiến, kiến nghị về giải quyết những vấn đề dân sinh, hạ tầng đô thị, an ninh trật tự và cải cách hành chính; đề xuất xây dựng kênh hỏi đáp trực tuyến, chatbot cung cấp thông tin chính thống. Chủ tịch UBND phường tiếp thu, giao rà soát, phối hợp giải quyết các kiến nghị thuộc thẩm quyền.</p></div>
+  <div class="fig"><div class="im"><img src="img/p20.jpg" alt=""></div><div class="cap"><b>Lãnh đạo phường phát biểu</b></div></div>
+ </div>
+ <div class="box red"><div class="ht"><svg style="color:var(--gold-l)"><use href="#i-mega"/></svg>Kết luận hội nghị</div><p>Kết luận hội nghị, đồng chí <b>Phạm Quang Thanh</b>, Ủy viên Ban Thường vụ Thành ủy, Bí thư Đảng ủy, Chủ tịch HĐND phường nhấn mạnh yêu cầu gắn đối thoại với kết quả giải quyết kiến nghị, xác định rõ trách nhiệm, triển khai đồng bộ các giải pháp <span class="d">tháo gỡ 5 điểm nghẽn</span>, nâng cao hiệu quả quản lý đô thị và chất lượng cuộc sống nhân dân.</p></div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-people"/></svg></span><span class="tx">Dân sinh</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-build"/></svg></span><span class="tx">Hạ tầng đô thị</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-shield"/></svg></span><span class="tx">An ninh trật tự</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-gear"/></svg></span><span class="tx">Cải cách hành chính</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-chat"/></svg></span><span class="tx">Hỏi đáp trực tuyến, chatbot</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 11 TẬP HUẤN ========== -->
+<section class="page" data-t="TẬP HUẤN CÔNG TÁC XÂY DỰNG ĐẢNG VÀ CHUYỂN ĐỔI SỐ" data-s="Trong hoạt động cơ quan dân cử"><div class="bd">
+ <div class="row r2 grow">
+  <div class="box" style="display:flex;flex-direction:column;gap:.6em;justify-content:space-around">
+   <div class="ht"><span class="n">1</span>Nghiệp vụ công tác tổ chức xây dựng Đảng</div>
+   <p>Căn cứ kế hoạch bồi dưỡng cán bộ năm 2026, <span class="d">sáng 29/9</span>, Ban Xây dựng Đảng phường phối hợp Trung tâm Chính trị phường tổ chức tập huấn nghiệp vụ công tác tổ chức xây dựng Đảng cho cấp ủy các đảng bộ, chi bộ. Nội dung tập trung quán triệt những điểm mới của Quy định số 208-QĐ/TW và Hướng dẫn số 02-HD/TW về thi hành Điều lệ Đảng.</p>
+   <div class="col" style="gap:.45em">
+    <div class="nv" style="grid-template-columns:2.3em 1fr"><span class="n" style="width:2.3em;height:2.3em;font-size:1em"><svg class="ic" style="width:1.3em;height:1.3em"><use href="#i-doc"/></svg></span><div><b class="t">Quy định số 208-QĐ/TW</b><span class="mini">Những điểm mới về thi hành Điều lệ Đảng</span></div></div>
+    <div class="nv" style="grid-template-columns:2.3em 1fr"><span class="n" style="width:2.3em;height:2.3em;font-size:1em"><svg class="ic" style="width:1.3em;height:1.3em"><use href="#i-book"/></svg></span><div><b class="t">Hướng dẫn số 02-HD/TW</b><span class="mini">Hướng dẫn thi hành Điều lệ Đảng</span></div></div>
+    <div class="nv" style="grid-template-columns:2.3em 1fr"><span class="n" style="width:2.3em;height:2.3em;font-size:1em"><svg class="ic" style="width:1.3em;height:1.3em"><use href="#i-people"/></svg></span><div><b class="t">Đối tượng</b><span class="mini">Cấp ủy các đảng bộ, chi bộ</span></div></div>
+   </div>
+  </div>
+  <div class="box" style="display:flex;flex-direction:column;gap:.6em;justify-content:space-around">
+   <div class="ht"><span class="n">2</span>Chuyển đổi số cho đại biểu HĐND phường</div>
+   <p>Cùng ngày, HĐND phường phối hợp với Phòng Thông tin - Dân nguyện thuộc Đoàn đại biểu Quốc hội và HĐND thành phố tổ chức tập huấn chuyển đổi số cho đại biểu HĐND phường. Các đại biểu được hướng dẫn khai thác kho dữ liệu dân cử dùng chung, sổ tay tài liệu chuyển đổi số HĐND phường, cách sử dụng ứng dụng <span class="d">iHĐND</span> truy cập qua <span class="d">VNeID mức độ 2</span> để thực hiện và theo dõi hoạt động HĐND, các Ban HĐND và đại biểu HĐND phường.</p>
+   <div style="display:flex;gap:.8em;align-items:stretch;min-height:11em">
+    <div class="phone"><div class="s"><div class="ap">iHĐND</div><span>Ứng dụng iHĐND</span><em>VNeID mức độ 2</em><span style="font-weight:600;color:var(--muted)">Theo dõi hoạt động HĐND, các Ban và đại biểu</span></div></div>
+    <ul class="ls" style="justify-content:center">
+     <li>Kho dữ liệu dân cử dùng chung</li>
+     <li>Sổ tay tài liệu chuyển đổi số HĐND phường</li>
+     <li>Ứng dụng iHĐND qua VNeID mức độ 2</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <div class="box red"><div class="ht"><svg style="color:var(--gold-l)"><use href="#i-target"/></svg>Kết quả tập huấn</div><p>Thông qua tập huấn, cấp ủy của đảng bộ, chi bộ, đại biểu HĐND phường được cập nhật kiến thức, nâng cao kỹ năng, ứng dụng hiệu quả công nghệ số, quy định của Điều lệ Đảng vào thực hiện nhiệm vụ tại cơ sở.</p></div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-cal"/></svg></span><span class="tx"><b>29/9</b>tổ chức tập huấn</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-flag"/></svg></span><span class="tx">Điều lệ Đảng</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-phone"/></svg></span><span class="tx">Ứng dụng iHĐND</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-id"/></svg></span><span class="tx">VNeID mức độ 2</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 12 BÀN GIAO TỔ CHỨC ĐẢNG ========== -->
+<section class="page" data-t="BÀN GIAO, TIẾP NHẬN TỔ CHỨC ĐẢNG VÀ ĐẢNG VIÊN" data-s="Chi bộ CT23 chuyển về trực thuộc Đảng bộ phường Ba Đình"><div class="bd">
+ <p class="lead"><span class="dc">C</span>hiều <span class="d">9/10</span>, Ban Thường vụ Đảng ủy phường tổ chức hội nghị bàn giao, tiếp nhận Chi bộ Công ty cổ phần Tập đoàn Đầu tư Ba Đình (CT23) từ Đảng ủy phường Cửa Nam về trực thuộc Đảng bộ phường Ba Đình. Chi bộ CT 23 với <span class="d">17 đảng viên</span> được chuyển giao trực thuộc Đảng ủy Doanh nghiệp phường.</p>
+ <div class="flow">
+  <div class="node"><small>Bàn giao</small><b>Đảng ủy phường <span style="white-space:nowrap">Cửa Nam</span></b></div>
+  <div class="ar"><svg><use href="#i-arrow"/></svg></div>
+  <div class="node on" style="flex:1.2 1 0"><small>Chi bộ Công ty cổ phần Tập đoàn Đầu tư Ba Đình</small><b style="font-size:1.6em">CT23 · 17 đảng viên</b></div>
+  <div class="ar"><svg><use href="#i-arrow"/></svg></div>
+  <div class="node"><small>Tiếp nhận</small><b>Đảng bộ phường Ba Đình</b><small>Trực thuộc Đảng ủy Doanh nghiệp phường</small></div>
+ </div>
+ <div class="fig grow" style="flex-grow:1.7"><div class="im"><img src="img/p13.jpg" alt="" style="object-position:50% 40%"></div><div class="cap"><b>Ký biên bản bàn giao, tiếp nhận</b>Đảng ủy phường Cửa Nam và Đảng ủy phường Ba Đình thực hiện bàn giao, tiếp nhận Chi bộ CT23.</div></div>
+ <div class="row r2 grow">
+  <div class="fig"><div class="im"><img src="img/p14.jpg" alt="" style="object-position:50% 45%"></div><div class="cap"><b>Hoàn tất bàn giao</b></div></div>
+  <div class="box red" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
+   <div style="font:800 5em/0.9 var(--f-title);color:var(--gold-l)">17</div>
+   <div style="font:800 1.2em var(--f-ui);text-transform:uppercase">đảng viên</div>
+   <div style="font:600 .9em var(--f-ui);color:#ffe0a8;margin-top:.3em">của Chi bộ CT23 được chuyển giao về Đảng bộ phường Ba Đình</div>
+  </div>
+ </div>
+</div></section>
+
+<!-- ========== 13 LỄ HỘI ========== -->
+<section class="page" data-t="LỄ HỘI ĐỀN QUÁN THÁNH" data-s="Kỷ niệm ngày hóa Đức Thánh Huyền Thiên Trấn Vũ"><div class="bd">
+ <p class="lead"><span class="dc">N</span>gày <span class="d">17/10</span>, phường Ba Đình tổ chức lễ hội kỷ niệm ngày hóa Đức Thánh Huyền Thiên Trấn Vũ tại đền Quán Thánh, nhằm tưởng nhớ công đức Đức Thánh, gìn giữ phong tục truyền thống và giáo dục thế hệ trẻ đạo lý <span class="d">“Uống nước nhớ nguồn”</span>. Điểm nhấn của lễ hội năm nay là không gian trưng bày nghệ thuật hoa văn, họa tiết trang trí và chuẩn hóa hệ thống bảng, biển chỉ dẫn, góp phần nâng cao trải nghiệm tham quan, tìm hiểu di tích. Trong khuôn khổ lễ hội, Hội thi bày mâm lễ dâng Đức Thánh thu hút <span class="d">18 tổ dân phố</span> tham gia, qua đó tiếp tục phát huy giá trị di tích trong đời sống hôm nay.</p>
+ <div class="fig grow" style="flex-grow:3"><div class="im"><img src="img/p26.jpg" alt=""></div><div class="cap"><b>Hội thi bày mâm lễ dâng Đức Thánh</b>18 tổ dân phố tham gia hội thi trong khuôn khổ lễ hội tại đền Quán Thánh.</div></div>
+ <div class="row r3">
+  <div class="box" style="text-align:center"><svg class="ic" style="width:2.2em;height:2.2em;color:var(--red)"><use href="#i-temple"/></svg><div class="ht" style="justify-content:center;margin:.2em 0">Trưng bày nghệ thuật</div><div class="mini">Hoa văn, họa tiết trang trí</div></div>
+  <div class="box" style="text-align:center"><svg class="ic" style="width:2.2em;height:2.2em;color:var(--red)"><use href="#i-pin"/></svg><div class="ht" style="justify-content:center;margin:.2em 0">Bảng, biển chỉ dẫn</div><div class="mini">Được chuẩn hóa, nâng cao trải nghiệm tham quan</div></div>
+  <div class="box red" style="text-align:center"><div style="font:800 2.8em/1 var(--f-title);color:var(--gold-l)">18</div><div class="ht" style="justify-content:center;margin:.1em 0">tổ dân phố</div><div class="mini">tham gia Hội thi bày mâm lễ</div></div>
+ </div>
+</div></section>
+
+<!-- ========== 14 CHUYỂN ĐỔI SỐ ========== -->
+<section class="page" data-t="CHUYỂN ĐỔI SỐ LAN TỎA TIỆN ÍCH SỐ" data-s="Đẩy mạnh chuyển đổi số, lan tỏa tiện ích số đến người dân"><div class="bd">
+ <p class="lead"><span class="dc">H</span>ưởng ứng Ngày Chuyển đổi số quốc gia và Ngày Chuyển đổi số thành phố Hà Nội, phường triển khai nhiều hoạt động thiết thực nhằm thúc đẩy chuyển đổi số, nâng cao kỹ năng số và đưa các tiện ích công nghệ đến gần hơn với người dân. Phường duy trì hoạt động của <span class="d">18 Tổ công nghệ số cộng đồng</span> với <span class="d">285 thành viên</span>, hỗ trợ <span class="d">100 người dân</span> sử dụng dịch vụ công trực tuyến. Cùng với đó, tổ chức <span class="d">05 phiên livestream</span> tuyên truyền, quảng bá các giá trị văn hóa, lịch sử và hoạt động trên địa bàn, gồm:</p>
+ <div class="row r2 grow">
+  <div class="fig"><div class="im"><img src="img/p17.jpg" alt=""></div><div class="cap"><b>Nâng cao kỹ năng số</b>Tuyên truyền, hướng dẫn người dân tiếp cận tiện ích số.</div></div>
+  <div class="fig"><div class="im"><img src="img/p18.jpg" alt=""></div><div class="cap"><b>Điểm cầu phường Ba Đình</b>Đông đảo người dân tham dự hoạt động.</div></div>
+ </div>
+ <div class="box">
+  <div class="ht"><svg><use href="#i-play"/></svg>05 phiên livestream</div>
+  <div class="row r2" style="gap:.3em 1.2em">
+   <ul class="ls">
+    <li>“Một mặt hồ - Một câu chuyện lịch sử” tại hồ Hữu Tiệp</li>
+    <li>“Tinh hoa Ba Đình”</li>
+    <li>“Khai mạc Tuần lễ đi chợ cùng Chợ Quen”</li>
+   </ul>
+   <ul class="ls">
+    <li>“Hội nghị tuyên truyền chính sách an sinh xã hội - trụ cột phát triển, đồng hành chăm lo cuộc sống của nhân dân trên địa bàn phường Ba Đình”</li>
+    <li>“Tinh hoa kẻ chợ - Từ Nghề đến Nghệ”</li>
+   </ul>
+  </div>
+ </div>
+ <p>…thu hút <span class="d">24.200 lượt người xem</span> trực tiếp. Đồng thời, tổ chức trao giải cho <span class="d">3 tập thể</span> trong Cuộc thi tìm kiếm ý tưởng cải cách hành chính năm 2026.</p>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-people"/></svg></span><span class="tx"><b>18</b>tổ công nghệ số</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-id"/></svg></span><span class="tx"><b>285</b>thành viên</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-hand"/></svg></span><span class="tx"><b>100</b>người dân được hỗ trợ</span></div>
+ </div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-play"/></svg></span><span class="tx"><b>05</b>phiên livestream</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-eye"/></svg></span><span class="tx"><b>24.200</b>lượt xem trực tiếp</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-trophy"/></svg></span><span class="tx"><b>03</b>tập thể đạt giải</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 15 NGÂN SÁCH ========== -->
+<section class="page" data-t="GIẢI NGÂN VỐN ĐẦU TƯ CÔNG ĐẠT 100% KẾ HOẠCH" data-s="Kết quả thu, chi ngân sách trên địa bàn phường tính đến 20/10/2026"><div class="bd">
+ <p class="lead"><span class="dc">T</span>ính đến <span class="d">20/10/2026</span>, thu ngân sách nhà nước trên địa bàn phường tiếp tục ghi nhận kết quả tích cực, với số thu lũy kế đạt <span class="d">hơn 5.566 tỷ đồng</span>, bằng <span class="d">255,6%</span> dự toán đầu năm. Chi ngân sách đạt <span class="d">hơn 466 tỷ đồng</span>, bằng <span class="d">90,2%</span> dự toán, bảo đảm nguồn lực thực hiện các nhiệm vụ chính trị. Đáng chú ý, giải ngân vốn đầu tư công đạt <span class="d">165,508 tỷ đồng</span>, hoàn thành <span class="d">100%</span> kế hoạch vốn sau điều chỉnh.</p>
+ <div class="box red grow" style="display:flex;align-items:center;gap:1.4em;padding:1em 1.4em">
+  <div class="gauge" style="flex:none;width:11em;height:11em">
+   <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="12"/><circle cx="60" cy="60" r="50" fill="none" stroke="url(#gG)" stroke-width="12" stroke-dasharray="314.16" stroke-dashoffset="0" transform="rotate(-90 60 60)"/><circle cx="60" cy="60" r="40" fill="#fff8ea"/></svg>
+   <div class="v"><div>100%<small>KẾ HOẠCH VỐN</small></div></div>
+  </div>
+  <div style="min-width:0">
+   <div style="font:700 1em var(--f-ui);text-transform:uppercase;letter-spacing:.05em;color:#ffe0a8">Giải ngân vốn đầu tư công</div>
+   <div style="font:800 4.2em/1 var(--f-title);color:var(--gold-l)">165,508 <span style="font-size:.45em">tỷ đồng</span></div>
+   <div style="font:600 1em var(--f-ui);margin-top:.3em">Hoàn thành 100% kế hoạch vốn sau điều chỉnh</div>
+  </div>
+ </div>
+ <div class="box">
+  <div class="ht"><svg><use href="#i-coin"/></svg>Thu ngân sách nhà nước lũy kế</div>
+  <div class="kpi"><div class="big">5.566 <span style="font-size:.45em">tỷ đồng</span></div><div style="font:700 .9em var(--f-ui);color:var(--red-d)">hơn 5.566 tỷ đồng · bằng <b style="color:var(--red)">255,6%</b> dự toán đầu năm</div></div>
+  <div style="position:relative;margin-top:.45em">
+   <div class="bar2" style="height:1.5em"><i style="width:85.2%;background:linear-gradient(90deg,var(--red),var(--red-l))"></i></div>
+   <div style="position:absolute;left:33.33%;top:-.25em;bottom:-.25em;border-left:2px dashed var(--ink)"></div>
+   <div style="display:flex;justify-content:space-between;font:600 .72em var(--f-ui);color:var(--muted);margin-top:.2em"><span>0%</span><span style="position:absolute;left:33.33%;transform:translateX(-50%)">100% dự toán</span><span>300%</span></div>
+  </div>
+ </div>
+ <div class="box">
+  <div class="ht"><svg><use href="#i-chart"/></svg>Chi ngân sách</div>
+  <div class="kpi"><div class="big">466 <span style="font-size:.45em">tỷ đồng</span></div><div style="font:700 .9em var(--f-ui);color:var(--red-d)">hơn 466 tỷ đồng · bằng <b style="color:var(--red)">90,2%</b> dự toán, bảo đảm nguồn lực thực hiện các nhiệm vụ chính trị</div></div>
+  <div style="position:relative;margin-top:.45em">
+   <div class="bar2" style="height:1.5em"><i style="width:90.2%;background:linear-gradient(90deg,var(--gold-d),var(--gold))"></i></div>
+   <div style="display:flex;justify-content:space-between;font:600 .72em var(--f-ui);color:var(--muted);margin-top:.2em"><span>0%</span><span>100% dự toán</span></div>
+  </div>
+ </div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-coin"/></svg></span><span class="tx"><b>255,6%</b>dự toán thu</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-chart"/></svg></span><span class="tx"><b>90,2%</b>dự toán chi</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-check"/></svg></span><span class="tx"><b>100%</b>vốn đầu tư công</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 16 HỌC TẬP SUỐT ĐỜI ========== -->
+<section class="page" data-t="ĐẨY MẠNH PHONG TRÀO HỌC TẬP SUỐT ĐỜI" data-s="Tuần lễ hưởng ứng học tập suốt đời năm 2026"><div class="bd">
+ <p class="lead"><span class="dc">N</span>gày <span class="d">6/10</span>, UBND phường khai mạc Tuần lễ hưởng ứng học tập suốt đời năm 2026, với chủ đề thúc đẩy làm chủ công nghệ số, trí tuệ nhân tạo, xây dựng xã hội học tập. Các trường học đẩy mạnh giáo dục STEM, kỹ năng số, văn hóa đọc; phường phối hợp cập nhật dữ liệu phổ cập giáo dục và chuẩn bị ra mắt mô hình giáo dục nghệ thuật dân tộc trong trường học vào tháng 11. Trước đó, <span class="d">ngày 4/10</span>, Hội Khuyến học phường tổ chức hội nghị tổng kết phong trào thi đua khuyến học, khuyến tài, xây dựng xã hội học tập năm 2026, vinh danh <span class="d">52 tập thể, cá nhân</span> tiêu biểu trong phong trào.</p>
+ <div class="fig grow" style="flex-grow:1.4"><div class="im"><img src="img/p33.jpg" alt=""></div><div class="cap"><b>Lễ khai mạc Tuần lễ hưởng ứng học tập suốt đời năm 2026</b>Chủ đề: thúc đẩy làm chủ công nghệ số, trí tuệ nhân tạo, xây dựng xã hội học tập.</div></div>
+ <div class="row r3 grow">
+  <div class="fig"><div class="im"><img src="img/p36.jpg" alt=""></div><div class="cap"><b>Học sinh trải nghiệm</b></div></div>
+  <div class="fig"><div class="im"><img src="img/p35.jpg" alt=""></div><div class="cap"><b>Trường học hạnh phúc</b></div></div>
+  <div class="fig"><div class="im"><img src="img/p32.jpg" alt=""></div><div class="cap"><b>Làm chủ công nghệ số</b></div></div>
+ </div>
+ <div class="chips">
+  <span class="chip"><svg><use href="#i-gear"/></svg>Giáo dục STEM</span>
+  <span class="chip"><svg><use href="#i-phone"/></svg>Kỹ năng số</span>
+  <span class="chip"><svg><use href="#i-book"/></svg>Văn hóa đọc</span>
+  <span class="chip"><svg><use href="#i-doc"/></svg>Dữ liệu phổ cập giáo dục</span>
+  <span class="chip"><svg><use href="#i-star"/></svg>Giáo dục nghệ thuật dân tộc (tháng 11)</span>
+ </div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-cal"/></svg></span><span class="tx"><b>06/10</b>khai mạc Tuần lễ</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-cap"/></svg></span><span class="tx">Xây dựng xã hội học tập</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-trophy"/></svg></span><span class="tx"><b>52</b>tập thể, cá nhân được vinh danh</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 17 AN NINH TRẬT TỰ ========== -->
+<section class="page" data-t="TĂNG CƯỜNG BẢO ĐẢM|AN NINH, TRẬT TỰ TRÊN ĐỊA BÀN" data-s="Kết quả bảo đảm an ninh, trật tự tháng 10/2026"><div class="bd">
+ <p class="lead"><span class="dc">T</span>háng 10/2026, các lực lượng chức năng phường chủ động nắm chắc tình hình, bảo vệ an toàn các mục tiêu trọng điểm, sự kiện chính trị diễn ra trên địa bàn. Công an phường phối hợp tuyên truyền, vận động, giải quyết <span class="d">87 lượt đoàn</span> với <span class="d">736 lượt khiếu kiện</span> tại khu vực A1; triển khai mô hình tuyến đường <span class="d">“Ba nhất”</span> về trật tự an toàn giao thông, trật tự đô thị trên phố Phan Đình Phùng. Tổ chức <span class="d">08 lượt kiểm tra</span> cơ sở về PCCC; Ra mắt Trung tâm giáo dục cộng đồng về PCCC và CNCH, đội PCCC tình nguyện, thực hành diễn tập chữa cháy, cứu nạn, cứu hộ tại nhà dân ở ngõ 62 Ngọc Hà. Đồng thời, phối hợp Công an các phường Hoàn Kiếm, Cửa Nam hỗ trợ <span class="d">68 trường hợp</span> lấy mẫu ADN phục vụ tìm kiếm, xác định danh tính hài cốt liệt sĩ.</p>
+ <div class="row r12 grow" style="flex-grow:1.6">
+  <div class="fig"><div class="im"><img src="img/p15.jpg" alt=""></div><div class="cap"><b>Hỗ trợ lấy mẫu ADN</b>Phục vụ tìm kiếm, xác định danh tính hài cốt liệt sĩ.</div></div>
+  <div class="col">
+   <div class="fig grow"><div class="im"><img src="img/p16.jpg" alt=""></div><div class="cap"><b>Tận tình hỗ trợ người dân</b></div></div>
+   <div class="fig grow"><div class="im"><img src="img/p39.jpg" alt=""></div><div class="cap"><b>Duy trì trật tự đô thị</b></div></div>
+  </div>
+ </div>
+ <div class="row r4">
+  <div class="box" style="text-align:center;padding:.6em .4em"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-people"/></svg><div class="big">87</div><div class="mini" style="font:700 .8em var(--f-ui);color:var(--red-d)">lượt đoàn với 736 lượt khiếu kiện</div></div>
+  <div class="box" style="text-align:center;padding:.6em .4em"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-car"/></svg><div class="big" style="font-size:2em;line-height:1.3">“Ba nhất”</div><div class="mini" style="font:700 .8em var(--f-ui);color:var(--red-d)">tuyến đường trên phố Phan Đình Phùng</div></div>
+  <div class="box" style="text-align:center;padding:.6em .4em"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-fire"/></svg><div class="big">08</div><div class="mini" style="font:700 .8em var(--f-ui);color:var(--red-d)">lượt kiểm tra cơ sở về PCCC</div></div>
+  <div class="box" style="text-align:center;padding:.6em .4em"><svg class="ic" style="width:2em;height:2em;color:var(--red)"><use href="#i-dna"/></svg><div class="big">68</div><div class="mini" style="font:700 .8em var(--f-ui);color:var(--red-d)">trường hợp lấy mẫu ADN</div></div>
+ </div>
+</div></section>
+
+<!-- ========== 18 THEO BÁC ========== -->
+<section class="page" data-t="CHUYÊN ĐỀ HỌC TẬP VÀ THỰC HÀNH THEO BÁC" data-s="Học tập và thực hành theo Bác gắn với nhiệm vụ ở cơ sở"><div class="bd">
+ <div class="box red" style="padding:1.1em 1.4em">
+  <p class="bigq" style="color:#fff6de;font-size:1.65em">Đảng mạnh là do chi&nbsp;bộ tốt.<br>Chi&nbsp;bộ tốt là do các đảng viên đều tốt</p>
+  <div class="who" style="color:var(--gold-l)">— Chủ tịch Hồ Chí Minh —</div>
+ </div>
+ <p class="lead">Chủ tịch Hồ Chí Minh từng khẳng định: “Đảng mạnh là do chi bộ tốt. Chi bộ tốt là do các đảng viên đều tốt”. Thấm nhuần lời dạy của Bác, các chi bộ đã cụ thể hóa việc học tập và thực hành theo Bác bằng những mô hình thiết thực, gắn với nhiệm vụ chính trị và đời sống cộng đồng. Tiêu biểu, Chi bộ 8 triển khai tư vấn pháp luật cộng đồng; Chi bộ 9 xây dựng “Chi bộ số”; các Chi bộ 10, 16, 17 về thực hành tiết kiệm, sử dụng hiệu quả tài sản công, nhà sinh hoạt cộng đồng và khu tập thể dục thể thao ở TDP. Các chi bộ Ban Xây dựng Đảng, Văn phòng Đảng ủy, cơ quan Ủy ban MTTQ Việt Nam phường và Tổ dân phố 18 tổ chức sinh hoạt chuyên đề, cụ thể hóa việc học tập và thực hành theo Bác thành những hành động thiết thực, gắn với thực hiện nhiệm vụ chính trị và giải quyết các vấn đề từ thực tiễn công tác.</p>
+ <div class="kh"><span class="pill">Mô hình tiêu biểu</span></div>
+ <div class="row r2 grow" style="grid-template-rows:1fr 1fr">
+  <div class="box" style="display:flex;gap:.8em;align-items:center;font-size:1.12em"><span class="st" style="flex:none;padding:0"><span class="ci"><svg><use href="#i-doc"/></svg></span></span><div><div class="ht" style="margin:0">Chi bộ 8</div>Tư vấn pháp luật cộng đồng</div></div>
+  <div class="box" style="display:flex;gap:.8em;align-items:center;font-size:1.12em"><span class="st" style="flex:none;padding:0"><span class="ci"><svg><use href="#i-phone"/></svg></span></span><div><div class="ht" style="margin:0">Chi bộ 9</div>Xây dựng “Chi bộ số”</div></div>
+  <div class="box" style="display:flex;gap:.8em;align-items:center;font-size:1.12em"><span class="st" style="flex:none;padding:0"><span class="ci"><svg><use href="#i-coin"/></svg></span></span><div><div class="ht" style="margin:0">Chi bộ 10, 16, 17</div>Thực hành tiết kiệm, sử dụng hiệu quả tài sản công, nhà sinh hoạt cộng đồng và khu tập thể dục thể thao ở TDP</div></div>
+  <div class="box" style="display:flex;gap:.8em;align-items:center;font-size:1.12em"><span class="st" style="flex:none;padding:0"><span class="ci"><svg><use href="#i-book"/></svg></span></span><div><div class="ht" style="margin:0">Sinh hoạt chuyên đề</div>Chi bộ Ban Xây dựng Đảng, Văn phòng Đảng ủy, cơ quan Ủy ban MTTQ Việt Nam phường và Tổ dân phố 18</div></div>
+ </div>
+</div></section>
+
+<!-- ========== 19 MTTQ & PHỤ NỮ ========== -->
+<section class="page" data-t="HOẠT ĐỘNG CỦA MTTQ VÀ CÁC TỔ CHỨC CHÍNH TRỊ - XÃ HỘI" data-s="Ủy ban MTTQ Việt Nam phường - Hội Liên hiệp Phụ nữ phường"><div class="bd">
+ <div class="box">
+  <div class="ht"><svg><use href="#i-flag"/></svg>Ủy ban MTTQ Việt Nam phường</div>
+  <p>Ủy ban MTTQ phường tổ chức Hội nghị sơ kết công tác Mặt trận 9 tháng đầu năm, triển khai nhiệm vụ trọng tâm 3 tháng cuối năm 2026; đồng thời kiện toàn <span class="d">27 ông, bà</span> tham gia Ủy ban MTTQ Việt Nam phường khóa I, nhiệm kỳ 2025–2030.</p>
+  <p style="margin-top:.35em">Hưởng ứng Tháng cao điểm “Vì người nghèo” năm 2026, Ủy ban MTTQ Việt Nam phường tổ chức phát động ủng hộ Quỹ “Vì Người nghèo” và các hoạt động an sinh xã hội, với tổng số tiền đăng ký đạt <span class="d">726,53 triệu đồng</span>. Dịp này, Ủy ban MTTQ Việt Nam phường trao Thư cảm ơn các tập thể tích cực đồng hành, ủng hộ chương trình và trao <span class="d">36 suất quà</span> tặng các gia đình có hoàn cảnh khó khăn, với tổng kinh phí gần 50 triệu đồng.</p>
+ </div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-people"/></svg></span><span class="tx"><b>27</b>ông, bà được kiện toàn</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-heart"/></svg></span><span class="tx"><b>726,53</b>triệu đồng đăng ký ủng hộ</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-gift"/></svg></span><span class="tx"><b>36</b>suất quà tặng</span></div>
+ </div>
+ <div class="box">
+  <div class="ht"><svg><use href="#i-heart"/></svg>Hội Liên hiệp Phụ nữ phường</div>
+  <p>Hướng tới kỷ niệm 72 năm Ngày Giải phóng Thủ đô và 96 năm Ngày thành lập Hội Liên hiệp Phụ nữ Việt Nam (20/10/1930 - 20/10/2026), Hội LHPN phường tổ chức nhiều hoạt động ý nghĩa. Sáng 10/10, <span class="d">200 cán bộ, hội viên phụ nữ</span> tham gia đồng diễn dân vũ tại các vườn hoa trên địa bàn. Hội tổ chức tham quan, sinh hoạt chính trị tại Di tích lịch sử Nhà tù Hỏa Lò; liên hoan nghệ thuật quần chúng “Giai điệu tự hào”, biểu dương <span class="d">10 phụ nữ Ba Đình tiêu biểu</span>. Hội cũng ra mắt mô hình “Gia đình phụ nữ số” với <span class="d">72 gia đình</span>, kênh trực tuyến “Lắng nghe phụ nữ nói” và tổ chức đối thoại trong khuôn khổ “Tháng nghe phụ nữ nói”. Ra mắt ấn phẩm điện tử Phụ nữ Ba Đình tháng 10/2026 với chủ đề “Tự hào tiếp bước tương lai”.</p>
+  <p style="margin-top:.35em">Nhân dịp này, Ban Vì sự tiến bộ của phụ nữ phường gặp mặt các nữ cán bộ chủ chốt. Tại chương trình, lãnh đạo Đảng ủy, HĐND, UBND và Ủy ban MTTQ Việt Nam phường tặng hoa chúc mừng UBND phường, Hội Liên hiệp Phụ nữ Việt Nam phường và trao quà tới các nữ cán bộ chủ chốt.</p>
+ </div>
+ <div class="row r3 grow">
+  <div class="fig"><div class="im"><img src="img/p03.jpg" alt=""></div><div class="cap"><b>Chúc mừng ngày 20/10</b></div></div>
+  <div class="fig"><div class="im"><img src="img/p05.jpg" alt="" style="object-position:50% 35%"></div><div class="cap"><b>Gặp mặt nữ cán bộ chủ chốt</b></div></div>
+  <div class="fig"><div class="im"><img src="img/p07.jpg" alt=""></div><div class="cap"><b>Tặng hoa, trao quà</b></div></div>
+ </div>
+</div></section>
+
+<!-- ========== 20 ĐOÀN, CÔNG ĐOÀN, CCB ========== -->
+<section class="page" data-t="HOẠT ĐỘNG CỦA MTTQ VÀ CÁC TỔ CHỨC CHÍNH TRỊ - XÃ HỘI" data-s="Đoàn Thanh niên - Công đoàn - Hội Cựu chiến binh phường"><div class="bd">
+ <div class="box">
+  <div class="ht"><svg><use href="#i-star"/></svg>Đoàn TNCS Hồ Chí Minh phường</div>
+  <p>Đoàn TNCS Hồ Chí Minh phường tổ chức Hội nghị tổng kết công tác Đội và phong trào thiếu nhi năm học 2025–2026, triển khai nhiệm vụ năm học 2026–2027; biểu dương các tập thể, cá nhân tiêu biểu và kiện toàn tổ chức Đoàn – Đội tại các trường học trên địa bàn. Phối hợp với Hội LHTN Việt Nam các phường Tây Hồ, Ngọc Hà tổ chức kỷ niệm <span class="d">70 năm Ngày truyền thống Hội LHTN Việt Nam</span> (15/10/1956–15/10/2026) và Trại huấn luyện Nguyễn Chí Thanh không tập trung năm 2026 với <span class="d">04 đội, 60 trại sinh</span> tham gia, trải qua <span class="d">05 trạm huấn luyện</span> tại các di tích lịch sử, địa chỉ đỏ. Đồng thời, phối hợp với Ban Chỉ huy Quân sự phường tổ chức chương trình gặp mặt, tọa đàm “80 năm – Vinh quang, tự hào người chiến sĩ Thủ đô”, góp phần tuyên truyền, giáo dục truyền thống cách mạng, khơi dậy niềm tự hào về truyền thống vẻ vang của lực lượng vũ trang Thủ đô trong cán bộ, đoàn viên, thanh niên.</p>
+ </div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-flag"/></svg></span><span class="tx"><b>70</b>năm truyền thống Hội LHTN</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-people"/></svg></span><span class="tx"><b>04</b>đội, 60 trại sinh</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-pin"/></svg></span><span class="tx"><b>05</b>trạm huấn luyện</span></div>
+ </div>
+ <div class="row r2 grow" style="flex-grow:1.2">
+  <div class="fig"><div class="im"><img src="img/p42.jpg" alt="" style="object-position:50% 70%"></div><div class="cap"><b>Trại huấn luyện Nguyễn Chí Thanh 2026</b>“Bản lĩnh người thủ lĩnh – Hành trình 70 năm”.</div></div>
+  <div class="fig"><div class="im"><img src="img/p43.jpg" alt="" style="object-position:50% 55%"></div><div class="cap"><b>Hộ chiếu số</b>Trại sinh tham gia các trạm huấn luyện tại di tích, địa chỉ đỏ.</div></div>
+ </div>
+ <div class="row r2">
+  <div class="box">
+   <div class="ht"><svg><use href="#i-people"/></svg>Công đoàn phường</div>
+   <p>Hưởng ứng “Tháng Áo dài Hà Nội năm 2026”, nhân kỷ niệm Ngày Phụ nữ Việt Nam 20/10, cán bộ, đoàn viên Công đoàn phường tham gia chương trình trải nghiệm “Tour yêu nước – Không gian bao cấp” tại Chạm Collective (số 11 Ngũ Xã). Hoạt động góp phần lan tỏa nét đẹp văn hóa truyền thống, khơi dậy niềm tự hào về lịch sử, đồng thời tạo không khí giao lưu, gắn kết trong đội ngũ cán bộ, đoàn viên Công đoàn.</p>
+  </div>
+  <div class="box red" style="display:flex;flex-direction:column;justify-content:center">
+   <div class="ht"><svg style="color:var(--gold-l)"><use href="#i-shield"/></svg>Hội Cựu chiến binh phường</div>
+   <p>Hội Cựu chiến binh phường phối hợp với BCH Quân sự và Đoàn TN phường tổ chức sinh hoạt truyền thống tại các trường học nhân dịp kỷ niệm 80 năm ngày truyền thống lực lượng vũ trang Thủ đô.</p>
+  </div>
+ </div>
+</div></section>
+
+<!-- ========== 21 MÔ HÌNH HAY ========== -->
+<section class="page" data-t="MÔ HÌNH HAY, CÁCH LÀM TỐT" data-s="Phát huy hiệu quả mô hình “Tổ dân phố Ba nhất về an ninh, trật tự”"><div class="bd">
+ <p class="lead"><span class="dc">T</span>ừ thực tiễn tại <span class="d">TDP số 6 cũ</span>, mô hình “Tổ dân phố Ba nhất về an ninh, trật tự” đã phát huy hiệu quả, góp phần củng cố đoàn kết toàn dân, nâng cao ý thức tự phòng, tự quản, bảo vệ của Nhân dân, giữ vững ổn định an ninh trật tự ngay từ cơ sở. Phát huy kết quả đó, Công an phường đề xuất tiếp tục triển khai mô hình tại <span class="d">Chi bộ TDP số 1 mới</span>, tập trung thực hiện ba tiêu chí: “Đoàn kết nhất - An toàn nhất - Phong trào toàn dân bảo vệ an ninh Tổ quốc tốt nhất”.</p>
+ <div class="kh"><span class="pill">Ba tiêu chí “Ba nhất”</span></div>
+ <div class="row r3 grow">
+  <div class="box red" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.5em"><span class="ci" style="width:4.2em;height:4.2em;border-radius:50%;background:#fff;display:grid;place-items:center;border:2px solid var(--gold-l)"><svg style="width:2.3em;height:2.3em;color:var(--red)"><use href="#i-people"/></svg></span><div style="font:800 2.3em/1 var(--f-title);color:var(--gold-l)">ĐOÀN KẾT NHẤT</div><div class="mini">Củng cố khối đoàn kết toàn dân ngay từ tổ dân phố</div></div>
+  <div class="box red" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.5em"><span class="ci" style="width:4.2em;height:4.2em;border-radius:50%;background:#fff;display:grid;place-items:center;border:2px solid var(--gold-l)"><svg style="width:2.3em;height:2.3em;color:var(--red)"><use href="#i-shield"/></svg></span><div style="font:800 2.3em/1 var(--f-title);color:var(--gold-l)">AN TOÀN NHẤT</div><div class="mini">Giữ vững ổn định an ninh trật tự ngay từ cơ sở</div></div>
+  <div class="box red" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.5em"><span class="ci" style="width:4.2em;height:4.2em;border-radius:50%;background:#fff;display:grid;place-items:center;border:2px solid var(--gold-l)"><svg style="width:2.3em;height:2.3em;color:var(--red)"><use href="#i-star"/></svg></span><div style="font:800 1.7em/1.05 var(--f-title);color:var(--gold-l)">PHONG TRÀO TOÀN DÂN BẢO VỆ AN NINH TỔ QUỐC TỐT NHẤT</div><div class="mini">Nâng cao ý thức tự phòng, tự quản, bảo vệ của Nhân dân</div></div>
+ </div>
+ <div class="kh"><span class="pill">Nhân rộng mô hình</span></div>
+ <div class="flow">
+  <div class="node"><small>Thực tiễn triển khai</small><b>TDP số 6 cũ</b><small>Mô hình phát huy hiệu quả</small></div>
+  <div class="ar" style="flex-direction:column;font:700 .75em var(--f-ui);color:var(--red)"><svg><use href="#i-arrow"/></svg>Công an phường đề xuất</div>
+  <div class="node on"><small>Tiếp tục triển khai</small><b>Chi bộ TDP số 1 mới</b><small>Tập trung thực hiện ba tiêu chí</small></div>
+ </div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-link"/></svg></span><span class="tx">Củng cố đoàn kết toàn dân</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-hand"/></svg></span><span class="tx">Tự phòng, tự quản, bảo vệ</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-shield"/></svg></span><span class="tx">Ổn định an ninh trật tự từ cơ sở</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 22 5 ĐIỂM NGHẼN ========== -->
+<section class="page" data-t="GÓC GIẢI QUYẾT 5 ĐIỂM NGHẼN" data-s="Kết quả xử lý, giải quyết tại các địa chỉ trên địa bàn phường"><div class="bd">
+ <div class="dn" style="--c:#C62828"><div class="h"><span class="no">01</span><svg><use href="#i-car"/></svg>Ùn tắc giao thông</div><div class="c"><ul class="ls">
+  <li>Lực lượng Công an phường duy trì kiểm soát địa bàn, xử lý đối với hành vi vi phạm về trật tự an toàn giao thông, trật tự đô thị; chủ động phân luồng giao thông khi phát sinh điểm ùn tắc, không để tình trạng ùn tắc kéo dài.</li>
+  <li>Kiểm tra xử lý trong lĩnh vực an toàn giao thông <span class="d">16 trường hợp</span>.</li></ul></div></div>
+ <div class="dn" style="--c:#2E7D32"><div class="h"><span class="no">02</span><svg><use href="#i-leaf"/></svg>Ô nhiễm môi trường</div><div class="c"><ul class="ls">
+  <li>Các Tổ dân phố duy trì nề nếp tổng vệ sinh vào sáng thứ 7 hằng tuần và bóc xóa quảng cáo rao vặt chào mừng 72 năm Ngày giải phóng Thủ đô.</li>
+  <li>Thực hiện tốt công tác thu gom, vận chuyển rác thải sinh hoạt, không để tồn đọng.</li></ul></div></div>
+ <div class="dn" style="--c:#1565C0"><div class="h"><span class="no">03</span><svg><use href="#i-build"/></svg>Trật tự đô thị</div><div class="c"><ul class="ls">
+  <li>Kiểm tra xử lý trong lĩnh vực trật tự đô thị <span class="d">17 trường hợp</span>.</li>
+  <li>Chỉ đạo xử lý <span class="d">15 trường hợp</span> ô tô đỗ sai quy định và vi phạm trật tự đô thị, lấn chiếm lòng đường để kinh doanh buôn bán tại khu vực hồ Đầm Tròn, số 1 phố Bắc Sơn.</li></ul></div></div>
+ <div class="dn" style="--c:#6A1B9A;flex-grow:1.25"><div class="h"><span class="no">04</span><svg><use href="#i-drop"/></svg>Úng ngập đô thị</div><div class="c"><ul class="ls">
+  <li>Phối hợp với các lực lượng ứng trực đảm bảo an toàn tại các điểm thường xuyên xảy ra hiện tượng úng ngập tạm thời.</li>
+  <li>Thay thế các tấm đan ga thoát nước bị hư hỏng trên các tuyến phố Nguyễn Biểu, Điện Biên Phủ, Đặng Dung, Quán Thánh, Nguyễn Tri Phương, Cửa Bắc.</li>
+  <li>Đề nghị Sở Xây dựng khắc phục bất cập thoát nước tại ngõ 100 Đội Cấn, các ngõ 36 và 42 Giang Văn Minh.</li></ul></div></div>
+ <div class="dn" style="--c:#E07B00"><div class="h"><span class="no">05</span><svg><use href="#i-food"/></svg>An toàn thực phẩm</div><div class="c"><ul class="ls">
+  <li>Thường xuyên kiểm tra các cơ sở dịch vụ ăn uống, bếp ăn bán trú trường học.</li>
+  <li>Kiểm tra <span class="d">03 cơ sở</span> kinh doanh dịch vụ, xử phạt <span class="d">01 cơ sở</span>.</li></ul></div></div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-car"/></svg></span><span class="tx"><b>16</b>trường hợp ATGT</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-build"/></svg></span><span class="tx"><b>17</b>trường hợp TTĐT</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-pin"/></svg></span><span class="tx"><b>15</b>ô tô đỗ sai quy định</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-food"/></svg></span><span class="tx"><b>03</b>cơ sở được kiểm tra</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 23 NHIỆM VỤ TRỌNG TÂM ========== -->
+<section class="page" data-t="NHIỆM VỤ TRỌNG TÂM THÁNG 11/2026" data-s="Phấn đấu hoàn thành vượt mức các chỉ tiêu năm 2026"><div class="bd" style="justify-content:space-between">
+ <div class="nv"><span class="n">1</span><div><b class="t">Chỉ tiêu, nhiệm vụ năm 2026</b><p>Rà soát <span class="d">15 nhiệm vụ</span> Thành phố giao, <span class="d">82 chỉ tiêu</span> phát triển kinh tế - xã hội, phấn đấu hoàn thành vượt mức các chỉ tiêu năm 2026.</p></div></div>
+ <div class="nv"><span class="n">2</span><div><b class="t">Nghị quyết Trung ương 4 khóa XIV</b><p>Tiếp tục nghiên cứu, học tập, quán triệt, tuyên truyền, triển khai thực hiện Nghị quyết Trung ương 4 khóa XIV và các kế hoạch, chương trình hành động của Ban Thường vụ Thành ủy, Đảng ủy phường thực hiện Nghị quyết Trung ương 4, khóa XIV.</p></div></div>
+ <div class="nv"><span class="n">3</span><div><b class="t">Công tác xây dựng Đảng</b><p>Tổ chức chu đáo <span class="d">Lễ trao Huy hiệu Đảng đợt 7/11</span>. Hoàn thiện danh mục vị trí việc làm trong hệ thống chính trị gắn với xây dựng đội ngũ cán bộ. Tiếp tục triển khai rà soát, làm sạch, chuẩn hóa, đối soát dữ liệu đảng viên trên ứng dụng Sổ tay đảng viên điện tử. Triển khai đánh giá, xếp loại tổ chức đảng, đảng viên năm 2026.</p></div></div>
+ <div class="nv"><span class="n">4</span><div><b class="t">An ninh trật tự - Văn hóa - Giáo dục</b><p>Giữ vững an ninh chính trị, trật tự an toàn xã hội. Tăng cường công tác phòng, chống tội phạm, PCCC, bảo đảm trật tự đô thị. Chuẩn bị công tác tuyển quân năm 2027. Tổ chức tốt các hoạt động kỷ niệm <span class="d">Ngày Nhà giáo Việt Nam 20/11</span>. Tích cực tham gia cuộc thi trực tuyến tìm hiểu quy định pháp luật về công tác tuyên truyền, phổ biến, giáo dục pháp luật và hòa giải ở cơ sở do UBND phường tổ chức.</p></div></div>
+ <div class="nv"><span class="n">5</span><div><b class="t">Mặt trận và các đoàn thể</b><p>Tổ chức <span class="d">Ngày hội Đại đoàn kết toàn dân tộc</span>, các hoạt động kỷ niệm 96 năm Ngày truyền thống MTTQ Việt Nam 18/11 và Ngày Văn hóa Việt Nam 24/11. Tiếp tục vận động Quỹ “Vì người nghèo”. Chỉ đạo các tổ chức chính trị - xã hội, các Hội quần chúng tổ chức bình xét, đánh giá thi đua năm 2026.</p></div></div>
+ <div class="kh"><span class="pill">Các mốc tháng 11</span></div>
+ <div class="stats sm">
+  <div class="st"><span class="ci"><svg><use href="#i-star"/></svg></span><span class="tx"><b>7/11</b>trao Huy hiệu Đảng</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-people"/></svg></span><span class="tx"><b>18/11</b>Ngày truyền thống MTTQ</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-cap"/></svg></span><span class="tx"><b>20/11</b>Ngày Nhà giáo Việt Nam</span></div>
+  <div class="st"><span class="ci"><svg><use href="#i-book"/></svg></span><span class="tx"><b>24/11</b>Ngày Văn hóa Việt Nam</span></div>
+ </div>
+</div></section>
+
+<!-- ========== 24 BÌA SAU ========== -->
+<section class="page back" data-density="hard"><div class="pi">
+ <div class="cv-top" style="padding:22px 20px 0;">
+  <img src="img/logo.png" alt="" style="width:92px;height:93px;border-radius:50%;display:block;margin:0 auto 8px">
+  <div class="cv-t" style="font-size:38px">THÔNG TIN PHƯỜNG BA ĐÌNH</div>
+  <div class="cv-pill" style="margin-top:4px">Ấn phẩm số</div>
+  <div class="cv-sub">PHƯỜNG BA ĐÌNH - THÀNH PHỐ HÀ NỘI</div>
+ </div>
+ <div class="rib" data-rib style="margin-top:12px"></div>
+ <div style="flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:18px;padding:0 40px">
+  <p class="bigq" style="font-size:24px">Những điều tốt đẹp luôn được lan tỏa để Ba Đình ngày càng tỏa sáng!</p>
+  <div class="col6" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;height:215px;flex:none;padding:0">
+   <div class="im"><img src="img/p19.jpg" alt=""></div>
+   <div class="im"><img src="img/p40.jpg" alt=""></div>
+   <div class="im"><img src="img/p13.jpg" alt=""></div>
+   <div class="im"><img src="img/p30.jpg" alt=""></div>
+  </div>
+  <div style="text-align:center;font:600 13px/1.6 var(--f-ui);color:var(--muted)"><b style="color:var(--red);font-size:14px;text-transform:uppercase;letter-spacing:.06em">Ban Biên tập</b><br>Bản tin nội bộ phường Ba Đình · Số tháng 11/2026<br>Lưu hành nội bộ</div>
+ </div>
+ <div class="lmk" style="height:130px;margin:0"></div>
+ <div class="ft" data-ft="24" style="margin-top:0"></div>
+</div></section>
+
+   </div>
+  </div>
+  <button class="nav n" id="nNext" aria-label="Trang sau"><svg><use href="#i-next"/></svg></button>
+ </div>
+ <div class="dock" role="toolbar" aria-label="Điều khiển bản tin">
+  <button class="btn" id="bFirst" title="Trang bìa (Home)" aria-label="Trang bìa"><svg><use href="#i-first"/></svg></button>
+  <button class="btn" id="bPrev" title="Trang trước (←)" aria-label="Trang trước"><svg><use href="#i-prev"/></svg></button>
+  <div class="sl"><input type="range" id="sl" min="1" max="24" value="1" aria-label="Chọn trang"><span class="pgi" id="pgi">1 / 24</span><div class="bub" id="bub"></div></div>
+  <button class="btn" id="bNext" title="Trang sau (→)" aria-label="Trang sau"><svg><use href="#i-next"/></svg></button>
+  <button class="btn" id="bLast" title="Trang cuối (End)" aria-label="Trang cuối"><svg><use href="#i-last"/></svg></button>
+  <span class="sep"></span>
+  <button class="btn" id="bThumbs" title="Xem tất cả trang" aria-label="Xem tất cả trang"><svg><use href="#i-grid"/></svg></button>
+  <button class="btn" id="bToc" title="Mục lục" aria-label="Mục lục"><svg><use href="#i-list"/></svg></button>
+  <button class="btn on" id="bSound" title="Bật/tắt nhạc nền" aria-label="Bật/tắt nhạc nền"><svg><use href="#i-snd" id="sndIc"/></svg></button>
+  <button class="btn" id="bZoom" title="Phóng to trang (nhấp đúp vào trang)" aria-label="Phóng to"><svg><use href="#i-zoom"/></svg></button>
+ </div>
+</div>
+
+<div class="thumbs" id="thumbs" aria-hidden="true">
+ <div class="th-h"><span>Tất cả các trang</span><button class="btn" id="tClose" aria-label="Đóng"><svg><use href="#i-x"/></svg></button></div>
+ <div class="row-t" id="trow"></div>
+</div>
+
+<div class="zoom" id="zoom" hidden>
+ <div class="zb">
+  <div class="ctrls"><button class="btn" id="zOut" aria-label="Thu nhỏ">−</button><button class="btn" id="zIn" aria-label="Phóng to thêm">+</button></div>
+  <span class="pgi" id="zpg"></span>
+  <button class="btn" id="zClose"><svg><use href="#i-x"/></svg><span class="lb">Đóng</span></button>
+ </div>
+ <div class="zc"><div class="zw" id="zw"></div></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script>
+(function(){
+const SLOGAN='Đoàn kết - Dân chủ - Kỷ cương - Đổi mới - Phát triển';
+const FLAG='<img class="flag" src="img/flags.png" alt="">';
+const RIB='<svg viewBox="0 0 600 30" preserveAspectRatio="none" aria-hidden="true"><path d="M0 4C150 0 450 8 600 2V26C450 31 150 23 0 28z" fill="url(#gR)"/><path d="M0 4C150 0 450 8 600 2" fill="none" stroke="url(#gG)" stroke-width="2"/><path d="M0 28C150 23 450 31 600 26" fill="none" stroke="url(#gG)" stroke-width="2"/></svg><span>'+SLOGAN+'</span>';
+const LOTUSLINE='<svg class="lotusline" viewBox="0 0 120 12" aria-hidden="true"><path d="M0 6h46M74 6h46" stroke="#C9922E" stroke-width="1"/><path d="M60 1c2 2 2.5 5 0 9-2.5-4-2-7 0-9zM60 10c-1-3-4-5-7-5 0 3 3 5 7 5zM60 10c1-3 4-5 7-5 0 3-3 5-7 5z" fill="#C9922E"/></svg>';
+const FT=n=>'<svg class="w" viewBox="0 0 600 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14C120 2 260 26 380 14S540 4 600 12V46H0z" fill="url(#gR)"/><path d="M0 14C120 2 260 26 380 14S540 4 600 12" fill="none" stroke="url(#gG)" stroke-width="2.5"/><path d="M0 22C140 12 280 34 400 22S550 14 600 20" fill="none" stroke="#F2D17A" stroke-opacity=".5" stroke-width="1"/></svg><div class="pn">'+n+'</div><div class="tag">#ĐTNBĐ</div>';
+
+const book=document.getElementById('book');
+const pages=[...book.querySelectorAll('.page')];
+pages.forEach((pg,i)=>{
+  const n=String(i+1).padStart(2,'0');
+  if(pg.dataset.t){
+    const bd=pg.querySelector('.bd');
+    const pi=document.createElement('div');pi.className='pi';
+    const hd=document.createElement('header');hd.className='hd';
+    hd.innerHTML='<img class="logo" src="img/logo.png" alt="">'+FLAG+(pg.dataset.e?'':'')+(pg.dataset.e?'<div class="kick">'+pg.dataset.e.toUpperCase()+'</div>':'<div style="height:6px"></div>')+'<h2 class="ttl"></h2><div class="sub"></div>'+LOTUSLINE;
+    {const tt=hd.querySelector('.ttl');pg.dataset.t.split('|').forEach((ln,k)=>{if(k)tt.appendChild(document.createElement('br'));tt.appendChild(document.createTextNode(ln));});}
+    hd.querySelector('.sub').textContent=pg.dataset.s||'';
+    const rib=document.createElement('div');rib.className='rib';rib.innerHTML=RIB;
+    const ft=document.createElement('footer');ft.className='ft';ft.innerHTML=FT(n);
+    pg.insertBefore(pi,bd);pi.append(hd,rib,bd,ft);
+  }
+  pg.querySelectorAll('[data-rib]').forEach(r=>r.innerHTML=RIB);
+  pg.querySelectorAll('[data-ft]').forEach(f=>f.innerHTML=FT(f.dataset.ft));
+});
+
+function fitAll(root){
+  root.querySelectorAll('.ttl').forEach(t=>{
+    let s=34;t.style.fontSize=s+'px';
+    while(s>22 && t.offsetHeight>2.6*s){s-=1;t.style.fontSize=s+'px';}
+  });
+  root.querySelectorAll('.bd').forEach(bd=>{
+    let f=1;bd.style.setProperty('--fs',f);
+    while(f>0.74 && bd.scrollHeight>bd.clientHeight+1){f=+(f-0.02).toFixed(2);bd.style.setProperty('--fs',f);}
+  });
+}
+
+
+let pf=null;const total=pages.length;
+const ART='https://phuongbadinh.github.io/tintuc/2026-11/';
+const $=id=>document.getElementById(id);
+const wrap=$('wrap'),stage=$('stage'),pgi=$('pgi'),sl=$('sl'),bub=$('bub'),nowEl=$('now');
+sl.max=total;
+const titles=pages.map((p,i)=>i===0?'Trang bìa':i===total-1?'Bìa sau':i===1?'Mục lục':'');
+document.querySelectorAll('#toc [data-go]').forEach(a=>{titles[+a.dataset.go-1]=a.querySelector('.t').textContent;});
+const isLand=()=>pf&&pf.getOrientation&&pf.getOrientation()==='landscape';
+function spreadOf(i){ if(!isLand()||i===0||i===total-1) return [i]; const a=i%2?i:i-1; return a+1<total?[a,a+1]:[a]; }
+
+/* ---------- âm thanh lật trang (tổng hợp) ---------- */
+let actx=null,soundOn=true;
+try{const v=localStorage.getItem('bd360-sound');if(v==='0')soundOn=false;}catch(_){}
+function flipSound(){
+  return;
+  try{
+    actx=actx||new (window.AudioContext||window.webkitAudioContext)();
+    if(actx.state==='suspended') actx.resume();
+    const t=actx.currentTime,d=.55,sr=actx.sampleRate;
+    const buf=actx.createBuffer(1,Math.floor(sr*d),sr),ch=buf.getChannelData(0);
+    for(let i=0;i<ch.length;i++){const x=i/ch.length;ch[i]=(Math.random()*2-1)*Math.pow(1-x,1.6)*(0.55+0.45*Math.sin(x*38+Math.random()));}
+    const src=actx.createBufferSource();src.buffer=buf;
+    const bp=actx.createBiquadFilter();bp.type='bandpass';bp.Q.value=0.7;
+    bp.frequency.setValueAtTime(3200,t);bp.frequency.exponentialRampToValueAtTime(700,t+d);
+    const hp=actx.createBiquadFilter();hp.type='highpass';hp.frequency.value=350;
+    const g=actx.createGain();g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.5,t+.04);g.gain.exponentialRampToValueAtTime(0.0001,t+d);
+    src.connect(bp);bp.connect(hp);hp.connect(g);g.connect(actx.destination);src.start(t);src.stop(t+d);
+  }catch(_){}
+}
+const bgm=new Audio('img/bgm.mp3');bgm.loop=true;bgm.preload='auto';bgm.volume=0;let bgmStarted=false,fadeT=0;window.__bgm=()=>[bgm.paused,bgmStarted,+bgm.volume.toFixed(2),+bgm.currentTime.toFixed(1)];
+function fadeTo(target,ms){clearInterval(fadeT);const st=bgm.volume,t0=performance.now();fadeT=setInterval(()=>{const k=Math.min(1,(performance.now()-t0)/ms);bgm.volume=Math.max(0,Math.min(1,st+(target-st)*k));if(k>=1){clearInterval(fadeT);if(target===0)bgm.pause();}},40);}
+function musicOn(){try{const p=bgm.play();if(p&&p.then)p.then(()=>{bgmStarted=true;fadeTo(0.45,1500);}).catch(()=>{});else{bgmStarted=true;fadeTo(0.45,1500);}}catch(_){}}
+function musicOff(){fadeTo(0,500);}
+function firstTouch(){if(soundOn&&!bgmStarted)musicOn();}
+['pointerdown','touchstart','keydown'].forEach(ev=>document.addEventListener(ev,firstTouch,{passive:true}));
+function setSound(v,init){soundOn=v;$('bSound').classList.toggle('on',v);$('sndIc').setAttribute('href',v?'#i-snd':'#i-mute');try{localStorage.setItem('bd360-sound',v?'1':'0')}catch(_){}
+  if(!init){if(v)musicOn();else musicOff();}}
+setSound(soundOn,true);
+$('bSound').onclick=()=>{setSound(!soundOn);};
+document.addEventListener('visibilitychange',()=>{if(!bgmStarted)return;if(document.hidden)bgm.pause();else if(soundOn)bgm.play().catch(()=>{});});
+
+/* ---------- kích thước ---------- */
+function sizeBook(){
+  const narrow=innerWidth<720;
+  const W=stage.clientWidth-(narrow?0:140), H=stage.clientHeight-(narrow?6:34);
+  const r=600/848;
+  const spread=W>=600 && W/H>0.95;
+  let w,h;
+  if(spread){h=Math.min(H,W/(2*r));w=h*r*2;}else{h=Math.min(H,W/r);w=h*r;}
+  w=Math.floor(w);h=Math.floor(h);
+  book.style.width=w+'px';book.style.height=h+'px';wrap.style.width=w+'px';wrap.style.height=h+'px';
+  return spread;
+}
+function rescale(){ if(!pf) return; const r=pf.getBoundsRect(); if(r&&r.pageWidth) book.style.setProperty('--k',(r.pageWidth/600).toFixed(4)); }
+
+/* căn giữa bìa trước / bìa sau, mép giấy, bóng sàn */
+function decorate(i){
+  if(!pf) return;
+  const r=pf.getBoundsRect(); if(!r) return;
+  const pw=r.pageWidth, land=isLand();
+  let shift=0, vis0=r.left, vis1=r.left+r.width;
+  if(land){
+    if(i===0){shift=-pw/2;vis0=r.left+pw;}
+    else if(i===total-1){shift=pw/2;vis1=r.left+pw;}
+  } else {vis0=r.left+pw;vis1=r.left+2*pw;}
+  wrap.style.transform=wrap.classList.contains('pre')?'':`translateX(${shift}px)`;
+  const eL=$('edL'),eR=$('edR'),bs=$('bsh');
+  const fr=total>1?i/(total-1):0;
+  const wl=land&&i>0?Math.round(2+7*fr):0, wr=land&&i<total-1?Math.round(2+7*(1-fr)):0;
+  eL.style.width=wl+'px';eL.style.left=(vis0-wl)+'px';eL.style.top=(r.top+2)+'px';eL.style.height=(r.height-4)+'px';eL.style.bottom='auto';eL.style.opacity=wl?1:0;
+  eR.style.width=wr+'px';eR.style.left=vis1+'px';eR.style.top=(r.top+2)+'px';eR.style.height=(r.height-4)+'px';eR.style.bottom='auto';eR.style.opacity=wr?1:0;
+  bs.style.left=(vis0+12)+'px';bs.style.width=(vis1-vis0-24)+'px';bs.style.right='auto';bs.style.bottom='auto';bs.style.top=(r.top+r.height-14)+'px';
+}
+
+/* ---------- trạng thái ---------- */
+let cur=0;
+function update(i){
+  cur=i;const sp=spreadOf(i);
+  const lab=sp.length>1?(sp[0]+1)+'–'+(sp[1]+1):String(sp[0]+1);
+  pgi.textContent=lab+' / '+total;
+  sl.value=sp[sp.length-1]+1;
+  nowEl.innerHTML=sp.map(x=>'<b>'+String(x+1).padStart(2,'0')+'</b> '+titles[x]).join('  ·  ');
+  const atS=i===0, atE=sp[sp.length-1]>=total-1;
+  ['bPrev','bFirst','nPrev'].forEach(id=>$(id).disabled=atS);
+  ['bNext','bLast','nNext'].forEach(id=>$(id).disabled=atE);
+  decorate(i);
+  document.querySelectorAll('.th').forEach(t=>t.classList.toggle('cur',sp.includes(+t.dataset.i)));
+}
+function goTo(n){ if(!pf) {pages[n-1].scrollIntoView({behavior:'smooth'});return;} const i=Math.max(0,Math.min(total-1,n-1)); if(spreadOf(cur).includes(i)) return; pf.flip(i); }
+function hashGo(){ const m=/^#trang-(\d+)$/.exec(location.hash); if(m&&pf){const n=Math.min(total,Math.max(1,+m[1])); pf.turnToPage(n-1); update(n-1);} }
+
+/* ---------- hạt vàng nền ---------- */
+function particles(){
+  const cv=$('fx');if(!cv.getContext) return;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const c=cv.getContext('2d');let W,H,dpr=Math.min(2,devicePixelRatio||1),P=[];
+  function rs(){W=cv.width=innerWidth*dpr;H=cv.height=innerHeight*dpr;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px';}
+  rs();addEventListener('resize',rs);
+  const N=innerWidth<720?22:46;
+  for(let k=0;k<N;k++)P.push({x:Math.random(),y:Math.random(),r:.6+Math.random()*2.2,v:.00004+Math.random()*.00012,ph:Math.random()*6.28,dx:(Math.random()-.5)*.00005});
+  let last=performance.now();
+  function fr(t){
+    const dt=Math.min(50,t-last);last=t;
+    if(!document.hidden){
+      c.clearRect(0,0,W,H);
+      for(const p of P){
+        p.y-=p.v*dt;p.x+=p.dx*dt;p.ph+=dt*.0015;if(p.y<-.02){p.y=1.02;p.x=Math.random();}
+        const a=.25+.35*Math.sin(p.ph)**2, R=p.r*dpr*3;
+        const g=c.createRadialGradient(p.x*W,p.y*H,0,p.x*W,p.y*H,R);
+        g.addColorStop(0,`rgba(255,226,150,${a})`);g.addColorStop(1,'rgba(255,200,90,0)');
+        c.fillStyle=g;c.beginPath();c.arc(p.x*W,p.y*H,R,0,6.283);c.fill();
+      }
+    }
+    requestAnimationFrame(fr);
+  }
+  requestAnimationFrame(fr);
+}
+
+/* ---------- khởi động ---------- */
+function start(){
+  fitAll(book);
+  if(!window.St||!St.PageFlip){
+    document.body.classList.add('noflip');document.body.style.overflow='auto';
+    stage.style.cssText='display:block;overflow:auto;flex:1';wrap.classList.remove('pre');wrap.style.cssText='';
+    book.style.cssText='display:flex;flex-direction:column;align-items:center;gap:16px;padding:8px 0';
+    pages.forEach(p=>{p.style.width='600px';p.style.height='848px';p.style.maxWidth='100%';});
+    pgi.textContent=total+' trang';done();return;
+  }
+  const spread=sizeBook();
+  const minFor=sp=>sp?60:Math.ceil(book.clientWidth/2)+2;
+  pf=new St.PageFlip(book,{width:600,height:848,size:'stretch',minWidth:minFor(spread),maxWidth:3000,minHeight:85,maxHeight:4300,
+    showCover:true,usePortrait:true,drawShadow:true,maxShadowOpacity:.7,flippingTime:950,mobileScrollSupport:false,autoSize:false,startPage:0,swipeDistance:25,showPageCorners:true});
+  book.style.minWidth='0';book.style.minHeight='0';
+  pf.loadFromHTML(pages);
+  pf.on('flip',e=>update(e.data));
+  pf.on('changeState',e=>{ if(e.data==='flipping') flipSound(); });
+  pf.on('changeOrientation',()=>{rescale();update(pf.getCurrentPageIndex());});
+  rescale();update(0);
+  setTimeout(()=>{rescale();hashGo();update(pf.getCurrentPageIndex());},60);
+  let rt=0;
+  addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{
+    const sp=sizeBook();pf.getSettings().minWidth=minFor(sp);book.style.minWidth='0';book.style.minHeight='0';
+    pf.update();rescale();update(pf.getCurrentPageIndex());
+  },80);});
+  /* nhấp đúp để phóng to */
+  book.addEventListener('dblclick',e=>{e.preventDefault();openZoom();});
+  done();
+}
+function reveal(){
+  $('loader').classList.add('done');
+  setTimeout(()=>{wrap.classList.remove('pre');if(pf)decorate(cur);},250);
+  particles();
+}
+function done(){
+  if(!soundOn){reveal();return;}
+  let ok=false;
+  try{const p=bgm.play();if(p&&p.then){p.then(()=>{ok=true;bgmStarted=true;fadeTo(0.45,1500);reveal();}).catch(()=>{showEnter();});return;}else{bgmStarted=true;fadeTo(0.45,1500);reveal();return;}}catch(_){showEnter();}
+}
+function showEnter(){
+  const b=$('enter');$('pbar').parentNode.style.display='none';b.hidden=false;
+  const lp=document.querySelector('#loader p');if(lp)lp.textContent='Ấn phẩm số · Tháng 11/2026';try{b.focus();}catch(_){}
+  b.onclick=()=>{musicOn();reveal();};
+}
+
+/* ---------- điều khiển ---------- */
+const prev=()=>{stopPlayByUser();pf&&pf.flipPrev();}, next=()=>{stopPlayByUser();pf&&pf.flipNext();};
+$('bPrev').onclick=prev;$('nPrev').onclick=prev;$('bNext').onclick=next;$('nNext').onclick=next;
+$('bFirst').onclick=()=>{stopPlayByUser();goTo(1);};$('bLast').onclick=()=>{stopPlayByUser();goTo(total);};
+$('bToc').onclick=()=>{stopPlayByUser();goTo(2);};
+sl.addEventListener('input',()=>{const n=+sl.value;bub.textContent='Trang '+n+' · '+titles[n-1];
+  const f=(n-1)/(total-1);bub.style.left=`calc(${f*100}% * 0.76 + 6px)`;bub.classList.add('show');});
+sl.addEventListener('change',()=>{bub.classList.remove('show');stopPlayByUser();goTo(+sl.value);});
+sl.addEventListener('blur',()=>bub.classList.remove('show'));
+document.addEventListener('keydown',e=>{
+  if(!$('zoom').hidden){ if(e.key==='Escape') closeZoom(); return; }
+  if(e.target&&e.target.tagName==='INPUT') return;
+  if(e.key==='Escape'&&$('thumbs').classList.contains('open')){toggleThumbs(false);return;}
+  if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();next();}
+  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}
+  else if(e.key==='Home'){goTo(1);} else if(e.key==='End'){goTo(total);}
+  else if(e.key==='f'||e.key==='F'){fullscreen();}
+});
+book.addEventListener('click',e=>{const a=e.target.closest('[data-go]');if(a){e.preventDefault();e.stopPropagation();goTo(+a.dataset.go);}},true);
+function fullscreen(){const d=document;try{if(d.fullscreenElement)d.exitFullscreen();else d.documentElement.requestFullscreen().catch(()=>{});}catch(_){}}
+$('bFull').onclick=fullscreen;
+
+/* tự động lật */
+let playing=false,pt=0;
+function togglePlay(v){
+  playing=v===undefined?!playing:v;
+  $('bPlay').classList.toggle('on',playing);$('playIc').setAttribute('href',playing?'#i-pause':'#i-play2');
+  clearInterval(pt);
+  if(playing){ if(spreadOf(cur).includes(total-1)) {pf&&pf.turnToPage(0);update(0);} pt=setInterval(()=>pf&&pf.flipNext(),4800); toast('Tự động lật trang mỗi 5 giây'); }
+}
+function stopPlayByUser(){}
+
+
+/* chia sẻ */
+let tt=0;
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),3200);}
+$('bShare').onclick=()=>{
+  const n=spreadOf(cur)[0]+1, url=ART+(n>1?'#trang-'+n:'');
+  const ok=()=>toast('Đã sao chép liên kết'+(n>1?' tới trang '+n:''));
+  try{navigator.clipboard.writeText(url).then(ok,()=>toast(url));}catch(_){toast(url);}
+};
+
+/* xem tất cả trang */
+let built=false;
+function buildThumbs(){
+  if(built) return;built=true;
+  const row=$('trow');
+  pages.forEach((p,i)=>{
+    const b=document.createElement('button');b.className='th'+(i>0&&i%2===1?' gap':'')+(i===total-1?' gap':'');b.dataset.i=i;
+    const tb=document.createElement('div');tb.className='tb';
+    const c=p.querySelector('.pi').cloneNode(true);c.querySelectorAll('[id]').forEach(x=>x.removeAttribute('id'));c.querySelectorAll('img').forEach(im=>im.loading='lazy');
+    tb.appendChild(c);b.appendChild(tb);
+    const s=document.createElement('span');s.textContent=String(i+1).padStart(2,'0');b.appendChild(s);
+    b.title=titles[i];
+    b.onclick=()=>{toggleThumbs(false);stopPlayByUser();goTo(i+1);};
+    row.appendChild(b);
+  });
+}
+function toggleThumbs(v){
+  const t=$('thumbs');const open=v===undefined?!t.classList.contains('open'):v;
+  if(open){buildThumbs();update(cur);}
+  t.classList.toggle('open',open);t.setAttribute('aria-hidden',open?'false':'true');$('bThumbs').classList.toggle('on',open);
+  if(open){const c=t.querySelector('.th.cur');c&&c.scrollIntoView({inline:'center',block:'nearest'});}
+}
+$('bThumbs').onclick=()=>toggleThumbs();$('tClose').onclick=()=>toggleThumbs(false);
+
+/* phóng to */
+const zoom=$('zoom'),zw=$('zw');let zf=1;
+function zLayout(){
+  const avail=Math.min(document.querySelector('.zc').clientWidth-32,1100);
+  const w=Math.max(600,Math.min(avail,1100))*zf, k=w/600;
+  zw.querySelectorAll('.zp').forEach(p=>{p.style.width=w+'px';p.style.height=(848*k)+'px';p.style.setProperty('--zk',k.toFixed(4));});
+}
+function openZoom(){
+  const idx=spreadOf(cur);zw.innerHTML='';
+  idx.forEach(x=>{const c=pages[x].querySelector('.pi').cloneNode(true);c.querySelectorAll('[id]').forEach(y=>y.removeAttribute('id'));const w=document.createElement('div');w.className='zp';w.appendChild(c);zw.appendChild(w);});
+  $('zpg').textContent='Trang '+idx.map(x=>x+1).join('–');zf=1;zoom.hidden=false;zLayout();
+}
+function closeZoom(){zoom.hidden=true;zw.innerHTML='';}
+$('bZoom').onclick=openZoom;$('zClose').onclick=closeZoom;
+$('zIn').onclick=()=>{zf=Math.min(2.5,zf+.25);zLayout();};$('zOut').onclick=()=>{zf=Math.max(.5,zf-.25);zLayout();};
+addEventListener('resize',()=>{if(!zoom.hidden)zLayout();});
+
+/* ---------- tải ảnh & phông ---------- */
+const imgs=[...document.images];let loaded=0;
+const bar=$('pbar');
+function tick(){loaded++;bar.style.width=Math.round(loaded/(imgs.length+1)*100)+'%';}
+const waits=imgs.map(im=>im.complete?(tick(),Promise.resolve()):new Promise(r=>{im.addEventListener('load',()=>{tick();r();},{once:true});im.addEventListener('error',()=>{tick();r();},{once:true});}));
+const fontsP=(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(tick);
+let started=false;const go=()=>{if(started)return;started=true;bar.style.width='100%';setTimeout(start,200);};
+Promise.all([fontsP,...waits]).then(go,go);
+setTimeout(go,7000);
+})();
+</script>
+
+</body></html>
