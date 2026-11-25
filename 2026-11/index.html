@@ -1035,7 +1035,7 @@ function flipSound(){
     src.connect(bp);bp.connect(hp);hp.connect(g);g.connect(actx.destination);src.start(t);src.stop(t+d);
   }catch(_){}
 }
-const bgm=new Audio('img/bgm.mp3');bgm.loop=true;bgm.preload='auto';bgm.volume=0;let bgmStarted=false,fadeT=0;window.__bgm=()=>[bgm.paused,bgmStarted,+bgm.volume.toFixed(2),+bgm.currentTime.toFixed(1)];
+const bgm=new Audio('../bgm.mp3');bgm.loop=true;bgm.preload='auto';bgm.volume=0;let bgmStarted=false,fadeT=0;window.__bgm=()=>[bgm.paused,bgmStarted,+bgm.volume.toFixed(2),+bgm.currentTime.toFixed(1)];
 function fadeTo(target,ms){clearInterval(fadeT);const st=bgm.volume,t0=performance.now();fadeT=setInterval(()=>{const k=Math.min(1,(performance.now()-t0)/ms);bgm.volume=Math.max(0,Math.min(1,st+(target-st)*k));if(k>=1){clearInterval(fadeT);if(target===0)bgm.pause();}},40);}
 function musicOn(){try{const p=bgm.play();if(p&&p.then)p.then(()=>{bgmStarted=true;fadeTo(0.45,1500);}).catch(()=>{});else{bgmStarted=true;fadeTo(0.45,1500);}}catch(_){}}
 function musicOff(){fadeTo(0,500);}
